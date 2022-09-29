@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:oak_log"
+    },
+    "1": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "2": {
+      "item": "minecraft:oak_log"
+    },
+    "3": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "4": {
+      "item": "minecraft:oak_log"
+    },
+    "5": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "6": {
+      "item": "minecraft:oak_log"
+    },
+    "7": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "8": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "minecraft:jungle_log",
+    "count": 5
+  }
+}

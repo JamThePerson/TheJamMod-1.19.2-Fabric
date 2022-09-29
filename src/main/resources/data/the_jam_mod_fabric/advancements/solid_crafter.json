@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_jam_mod_fabric:jammonite_ingot"
+    },
+    "title": {
+      "translate": "advancements.solid_crafter.title"
+    },
+    "description": {
+      "translate": "advancements.solid_crafter.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "solid_crafter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_jam_mod_fabric:jammonite_ingot"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "the_jam_mod_fabric:obtain_jammonite"
+}

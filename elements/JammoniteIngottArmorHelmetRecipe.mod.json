@@ -10,18 +10,6 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:JammoniteIngot"
-      },
-      {
-        "value": "CUSTOM:JammoniteIngot"
-      },
-      {
-        "value": "CUSTOM:JammoniteIngot"
-      },
-      {
-        "value": "CUSTOM:JammoniteIngot"
-      },
-      {
         "value": ""
       },
       {
@@ -32,15 +20,30 @@
       },
       {
         "value": ""
+      },
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:JammoniteIngottArmor.helmet"
+      "value": "CUSTOM:JammoniteIngottSword"
     },
-    "name": "jammonite_ingott_armor_helmet_recipe",
+    "name": "jammonite_ingott_sword_recipe",
+    "namespace": "mod"
+  }
+}ecipe",
     "namespace": "mod"
   }
 }

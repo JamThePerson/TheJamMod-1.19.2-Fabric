@@ -21,6 +21,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvents;
@@ -31,6 +32,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.thejammodfabric.procedures.FrayloEntityDiesProcedure;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModSounds;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntities;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModBlocks;
@@ -119,6 +121,19 @@ public class FrayloEntity extends Skeleton {
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity sourceentity = source.getEntity();
+		Entity entity = this;
+		Level world = this.level;
+
+		FrayloEntityDiesProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
 	}
 
 	@Override

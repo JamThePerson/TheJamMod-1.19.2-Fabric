@@ -2,45 +2,22 @@
   "_fv": 33,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Smithing",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      },
-      {
-        "value": "CUSTOM:SteveniteIngot"
-      }
-    ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SteveniteIngotBlock"
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_CHESTPLATE"
     },
-    "name": "stevenite_ingot_to_block_recipe",
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SteveniteIngot"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:SteveniteArmor.body"
+    },
+    "name": "stevenite_armor_body_recipe",
     "namespace": "mod"
   }
 }

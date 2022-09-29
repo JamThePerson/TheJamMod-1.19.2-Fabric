@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_the_jam_mod.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_the_jam_mod.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "welcome_to_the_jam_mod": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "the_jam_mod_fabric:bob_recipe",
+      "the_jam_mod_fabric:jammonite_ingott_hoe_recipe",
+      "the_jam_mod_fabric:jammonite_ingot_recipe"
+    ]
+  },
+  "parent": "minecraft:story/root"
+}

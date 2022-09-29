@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": {
+      "translate": "advancements.defeat_devs.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_devs.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_devs": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "the_jam_mod_fabric:welcome_to_the_jam_mod"
+}

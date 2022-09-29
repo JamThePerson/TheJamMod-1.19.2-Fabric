@@ -2,22 +2,45 @@
   "_fv": 33,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_AXE"
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      },
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:JammoniteIngottAxe"
     },
-    "smithingInputAdditionStack": {
-      "value": "CUSTOM:SteveniteIngot"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:SteveniteAxe"
-    },
-    "name": "stevenite_axe_recipe",
+    "name": "jammonite_ingott_axe_recipe",
     "namespace": "mod"
   }
 }

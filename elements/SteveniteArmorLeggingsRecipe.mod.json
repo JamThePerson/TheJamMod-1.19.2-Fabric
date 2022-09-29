@@ -2,22 +2,45 @@
   "_fv": 33,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smithing",
+    "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 9,
     "group": "",
-    "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "Items.NETHERITE_LEGGINGS"
-    },
-    "smithingInputAdditionStack": {
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SteveniteIngotBlock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
       "value": "CUSTOM:SteveniteIngot"
     },
-    "smithingReturnStack": {
-      "value": "CUSTOM:SteveniteArmor.legs"
-    },
-    "name": "stevenite_armor_leggings_recipe",
+    "name": "stevenite_block_conversion_recipe",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "title": {
+      "translate": "advancements.obtain_jammonite.title"
+    },
+    "description": {
+      "translate": "advancements.obtain_jammonite.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obtain_jammonite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "the_jam_mod_fabric:jammonite"
+            ],
+            "count": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "the_jam_mod_fabric:welcome_to_the_jam_mod"
+}

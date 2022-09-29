@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_jam_mod_fabric:stevenite_ingot_block"
+    },
+    "title": {
+      "translate": "advancements.defeat_fraylo.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_fraylo.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_fraylo": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50,
+    "recipes": [
+      "the_jam_mod_fabric:stevenite_pickaxe_recipe",
+      "the_jam_mod_fabric:jammonite_ingott_axe_recipe",
+      "the_jam_mod_fabric:stevenite_sword_recipe",
+      "the_jam_mod_fabric:stevenite_shovel_recipe",
+      "the_jam_mod_fabric:stevenite_hoe_recipe",
+      "the_jam_mod_fabric:stevenite_block_conversion_recipe",
+      "the_jam_mod_fabric:stevenite_armor_body_recipe",
+      "the_jam_mod_fabric:jammonite_ingott_shovel_recipe",
+      "the_jam_mod_fabric:stevenite_armor_body_recipe",
+      "the_jam_mod_fabric:stevenite_block_conversion_recipe",
+      "the_jam_mod_fabric:stevenite_armor_boots_recipe"
+    ]
+  },
+  "parent": "the_jam_mod_fabric:kill_ddyll"
+}

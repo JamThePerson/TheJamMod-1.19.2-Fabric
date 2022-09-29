@@ -20,6 +20,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvents;
@@ -27,6 +28,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.thejammodfabric.procedures.DdyllEntityDiesProcedure;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntities;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
 
@@ -91,10 +93,23 @@ public class DdyllEntity extends Monster {
 		return super.hurt(source, amount);
 	}
 
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity sourceentity = source.getEntity();
+		Entity entity = this;
+		Level world = this.level;
+
+		DdyllEntityDiesProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
+	}
+
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "ddyll_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DDYLL, 20, 1, 1)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DDYLL, 17, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

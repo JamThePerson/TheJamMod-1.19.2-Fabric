@@ -5,42 +5,42 @@
     "recipeType": "Crafting",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 5,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:JammoniteIngot"
+        "value": "Blocks.LOG"
       },
       {
-        "value": "CUSTOM:JammoniteIngot"
+        "value": "Items.WHEAT_SEEDS"
       },
       {
-        "value": ""
+        "value": "Blocks.LOG"
       },
       {
-        "value": ""
+        "value": "Items.WHEAT_SEEDS"
       },
       {
-        "value": "Items.STICK"
+        "value": "Blocks.LOG"
       },
       {
-        "value": ""
+        "value": "Items.WHEAT_SEEDS"
       },
       {
-        "value": ""
+        "value": "Blocks.LOG"
       },
       {
-        "value": "Items.STICK"
+        "value": "Items.WHEAT_SEEDS"
       },
       {
-        "value": ""
+        "value": "Blocks.LOG"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:JammoniteIngottHoe"
+      "value": "Blocks.LOG#3"
     },
-    "name": "jammonite_ingott_hoe_recipe",
+    "name": "jungle_wood_recipe",
     "namespace": "mod"
   }
 }

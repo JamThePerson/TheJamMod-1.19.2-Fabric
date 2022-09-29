@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "title": {
+      "translate": "advancements.kill_ddyll.title"
+    },
+    "description": {
+      "translate": "advancements.kill_ddyll.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "kill_ddyll": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30,
+    "recipes": [
+      "the_jam_mod_fabric:chocolate_recipe"
+    ]
+  },
+  "parent": "the_jam_mod_fabric:defeat_devs"
+}

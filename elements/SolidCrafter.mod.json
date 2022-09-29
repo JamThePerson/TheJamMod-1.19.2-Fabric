@@ -1,0 +1,25 @@
+{
+  "_fv": 33,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Solid Crafter",
+    "achievementDescription": "Create a Jammonite Ingot!",
+    "achievementIcon": {
+      "value": "CUSTOM:JammoniteIngot"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 10,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:ObtainJammonite"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"35\" y=\"20\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:JammoniteIngot</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

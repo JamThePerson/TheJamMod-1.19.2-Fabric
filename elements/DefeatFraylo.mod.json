@@ -1,0 +1,37 @@
+{
+  "_fv": 33,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Defeat Fraylo",
+    "achievementDescription": "Successfully kill Fraylo and obtain the Stevenite Block.",
+    "achievementIcon": {
+      "value": "CUSTOM:SteveniteIngotBlock"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "StevenitePickaxeRecipe",
+      "SteveniteAxeRecipe",
+      "SteveniteSwordRecipe",
+      "SteveniteShovelRecipe",
+      "SteveniteHoeRecipe",
+      "SteveniteBlockConversionRecipe",
+      "SteveniteIngotToBlockRecipe",
+      "SteveniteArmorHelmetRecipe",
+      "SteveniteArmorBodyRecipe",
+      "SteveniteArmorLeggingsRecipe",
+      "SteveniteArmorBootsRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 50,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:KillDdyll"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"39\" y=\"51\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}
