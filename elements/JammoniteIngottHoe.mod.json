@@ -1,0 +1,31 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "jammondhoe",
+    "customModelName": "Normal",
+    "name": "JammoniteIngott Hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 11,
+    "efficiency": 17.0,
+    "attackSpeed": 1.0,
+    "enchantability": 77,
+    "damageVsEntity": 11.0,
+    "usageCount": 4719,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

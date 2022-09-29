@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 50,
+  "cookingtime": 500,
+  "ingredient": {
+    "item": "minecraft:cooked_beef"
+  },
+  "result": "the_jam_mod_fabric:bob"
+}

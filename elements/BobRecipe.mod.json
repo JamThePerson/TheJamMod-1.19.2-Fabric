@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Items.COOKED_BEEF"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      },
+      {
+        "value": "Blocks.WOOL#11"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Bob"
+    },
+    "name": "bob_recipe",
+    "namespace": "mod"
+  }
+}

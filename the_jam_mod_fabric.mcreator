@@ -167,6 +167,258 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "stevenite_ingot_to_block_recipe"
+    },
+    {
+      "name": "Bob",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob"
+    },
+    {
+      "name": "BobSmokingRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_smoking_recipe"
+    },
+    {
+      "name": "BobCookingRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_cooking_recipe"
+    },
+    {
+      "name": "BobBlastingRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_blasting_recipe"
+    },
+    {
+      "name": "BobRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_recipe"
+    },
+    {
+      "name": "StevenBow",
+      "type": "rangeditem",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steven_bow"
+    },
+    {
+      "name": "Chocolate",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chocolate"
+    },
+    {
+      "name": "CocoaPodRecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cocoa_pod_recipe"
+    },
+    {
+      "name": "ChocolateRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chocolate_recipe"
+    },
+    {
+      "name": "SteveniteArmor",
+      "type": "armor",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SteveniteArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_armor_helmet_recipe"
+    },
+    {
+      "name": "SteveniteArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_armor_body_recipe"
+    },
+    {
+      "name": "SteveniteArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_armor_leggings_recipe"
+    },
+    {
+      "name": "SteveniteArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_armor_boots_recipe"
+    },
+    {
+      "name": "JammoniteIngot",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingot"
+    },
+    {
+      "name": "JammoniteIngottPickaxe",
+      "type": "tool",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_pickaxe"
+    },
+    {
+      "name": "JammoniteIngottAxe",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_axe"
+    },
+    {
+      "name": "JammoniteIngottSword",
+      "type": "tool",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_sword"
+    },
+    {
+      "name": "JammoniteIngottShovel",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_shovel"
+    },
+    {
+      "name": "JammoniteIngottHoe",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_hoe"
+    },
+    {
+      "name": "JammoniteIngottPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_pickaxe_recipe"
+    },
+    {
+      "name": "JammoniteIngottAxeRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_axe_recipe"
+    },
+    {
+      "name": "JammoniteIngottSwordRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_sword_recipe"
+    },
+    {
+      "name": "JammoniteIngottShovelRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_shovel_recipe"
+    },
+    {
+      "name": "JammoniteIngottHoeRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_hoe_recipe"
+    },
+    {
+      "name": "JammoniteIngottArmor",
+      "type": "armor",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "JammoniteIngottArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_armor_helmet_recipe"
+    },
+    {
+      "name": "JammoniteIngottArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_armor_body_recipe"
+    },
+    {
+      "name": "JammoniteIngottArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_armor_leggings_recipe"
+    },
+    {
+      "name": "JammoniteIngottArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingott_armor_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -210,32 +462,58 @@
       ],
       "category": "neutral",
       "subtitle": "Fraylo Death"
+    },
+    {
+      "name": "stevenitearmourequip",
+      "files": [
+        "armourequip"
+      ],
+      "category": "neutral",
+      "subtitle": "Stevenite Armor Equipped"
     }
   ],
   "language_map": {
     "en_us": {
-      "subtitles.devslivingnoise": "Devs Living",
+      "item.the_jam_mod_fabric.jammonite_ingott_armor_helmet": "Jammonite Ingot Helmet",
       "entity.the_jam_mod_fabric.ddyll": "Ddyll",
       "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
+      "item.the_jam_mod_fabric.bob": "Bob",
       "subtitles.frayloliving": "Fraylo Nearby",
-      "item.the_jam_mod_fabric.stevenite_sword": "Stevenite Sword",
+      "item.the_jam_mod_fabric.jammonite_ingot": "Jammonite Ingot",
       "entity.the_jam_mod_fabric.devs": "Devs",
+      "item.the_jam_mod_fabric.stevenite_axe": "Stevenite Axe",
+      "item.the_jam_mod_fabric.stevenite_armor_leggings": "Stevenite Leggings",
+      "item.the_jam_mod_fabric.jammonite_ingott_armor_leggings": "Jammonite Ingot Leggings",
+      "item.the_jam_mod_fabric.fraylo_spawn_egg": "Fraylo Spawn Egg",
+      "item.the_jam_mod_fabric.jammonite_ingott_shovel": "JammoniteIngott Shovel",
+      "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
+      "item.the_jam_mod_fabric.jammonite_ingott_sword": "Jammonite Ingot Sword",
+      "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
+      "subtitles.stevenitearmourequip": "Stevenite Armor Equipped",
+      "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
+      "item.the_jam_mod_fabric.jammonite": "Jammonite",
+      "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
+      "subtitles.devslivingnoise": "Devs Living",
+      "item.the_jam_mod_fabric.stevenite_armor_boots": "Stevenite Boots",
+      "item.the_jam_mod_fabric.jammonite_ingott_hoe": "JammoniteIngott Hoe",
+      "item.the_jam_mod_fabric.stevenite_sword": "Stevenite Sword",
       "entity.the_jam_mod_fabric.fraylo": "Fraylo",
       "block.the_jam_mod_fabric.jammonite_ore": "Jammonite Ore",
-      "item.the_jam_mod_fabric.stevenite_axe": "Stevenite Axe",
+      "item.the_jam_mod_fabric.stevenite_armor_helmet": "Stevenite Helmet",
       "itemGroup.the_jam_mod_fabric.jam_mod": "Jam Mod",
       "subtitles.devsdeathnoise": "Devs Death",
-      "item.the_jam_mod_fabric.fraylo_spawn_egg": "Fraylo Spawn Egg",
       "subtitles.fraylodeath": "Fraylo Death",
       "block.the_jam_mod_fabric.stevenite_ingot_block": "Stevenite Ingot Block",
+      "item.the_jam_mod_fabric.steven_bow": "Steven Bow",
+      "item.the_jam_mod_fabric.jammonite_ingott_pickaxe": "JammoniteIngott Pickaxe",
+      "item.the_jam_mod_fabric.jammonite_ingott_axe": "JammoniteIngott Axe",
       "enchantment.the_jam_mod_fabric.jam_test_enchantment": "Jam Test Enchantment",
-      "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
+      "item.the_jam_mod_fabric.jammonite_ingott_armor_chestplate": "Jammonite Ingot Chestplate",
+      "item.the_jam_mod_fabric.stevenite_armor_chestplate": "Stevenite Chestplate",
       "subtitles.fraylowalking": "Fraylo Steps",
-      "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
-      "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
-      "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
-      "item.the_jam_mod_fabric.jammonite": "Jammonite",
-      "item.the_jam_mod_fabric.stevenite_shovel": "Stevenite Shovel"
+      "item.the_jam_mod_fabric.chocolate": "Chocolate",
+      "item.the_jam_mod_fabric.stevenite_shovel": "Stevenite Shovel",
+      "item.the_jam_mod_fabric.jammonite_ingott_armor_boots": "Jammonite Ingot Boots"
     }
   },
   "foldersRoot": {

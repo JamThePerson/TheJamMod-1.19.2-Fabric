@@ -1,0 +1,23 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_HELMET"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:SteveniteIngot"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:SteveniteArmor.helmet"
+    },
+    "name": "stevenite_armor_helmet_recipe",
+    "namespace": "mod"
+  }
+}

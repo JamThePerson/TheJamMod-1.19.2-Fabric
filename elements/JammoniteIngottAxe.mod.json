@@ -1,0 +1,31 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "jammondaxe",
+    "customModelName": "Normal",
+    "name": "JammoniteIngott Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 11,
+    "efficiency": 17.0,
+    "attackSpeed": 0.85,
+    "enchantability": 77,
+    "damageVsEntity": 16.0,
+    "usageCount": 4719,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

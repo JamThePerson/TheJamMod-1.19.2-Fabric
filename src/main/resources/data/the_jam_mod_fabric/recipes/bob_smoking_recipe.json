@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 30,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft:cooked_beef"
+  },
+  "result": "the_jam_mod_fabric:bob"
+}

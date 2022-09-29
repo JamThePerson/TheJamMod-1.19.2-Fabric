@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blue_wool"
+    },
+    "1": {
+      "item": "minecraft:blue_wool"
+    },
+    "2": {
+      "item": "minecraft:blue_wool"
+    },
+    "3": {
+      "item": "minecraft:blue_wool"
+    },
+    "4": {
+      "item": "minecraft:cooked_beef"
+    },
+    "5": {
+      "item": "minecraft:blue_wool"
+    },
+    "6": {
+      "item": "minecraft:blue_wool"
+    },
+    "7": {
+      "item": "minecraft:blue_wool"
+    },
+    "8": {
+      "item": "minecraft:blue_wool"
+    }
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:bob",
+    "count": 1
+  }
+}

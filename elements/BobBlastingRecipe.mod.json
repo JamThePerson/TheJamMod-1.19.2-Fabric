@@ -1,0 +1,20 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 100.0,
+    "cookingTime": 1000,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Items.COOKED_BEEF"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Bob"
+    },
+    "name": "bob_blasting_recipe",
+    "namespace": "mod"
+  }
+}

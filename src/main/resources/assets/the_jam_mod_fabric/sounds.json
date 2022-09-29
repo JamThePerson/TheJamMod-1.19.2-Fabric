@@ -48,5 +48,15 @@
         "stream": false
       }
     ]
+  },
+  "stevenitearmourequip": {
+    "category": "neutral",
+    "subtitle": "subtitles.stevenitearmourequip",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:armourequip",
+        "stream": false
+      }
+    ]
   }
 }

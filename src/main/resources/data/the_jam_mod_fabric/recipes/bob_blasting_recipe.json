@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 100,
+  "cookingtime": 1000,
+  "ingredient": {
+    "item": "minecraft:cooked_beef"
+  },
+  "result": "the_jam_mod_fabric:bob"
+}

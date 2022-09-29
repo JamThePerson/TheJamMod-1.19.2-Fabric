@@ -1,0 +1,62 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "stevenite_head",
+    "enableBody": true,
+    "textureBody": "stevenite_body",
+    "enableLeggings": true,
+    "textureLeggings": "stevenite_leggings",
+    "enableBoots": true,
+    "textureBoots": "stevenite_boots",
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "armorTextureFile": "stevenite",
+    "helmetName": "Stevenite Helmet",
+    "bodyName": "Stevenite Chestplate",
+    "leggingsName": "Stevenite Leggings",
+    "bootsName": "Stevenite Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 103,
+    "damageValueHelmet": 13,
+    "damageValueBody": 21,
+    "damageValueLeggings": 16,
+    "damageValueBoots": 17,
+    "enchantability": 54,
+    "toughness": 5.0,
+    "knockbackResistance": 0.5,
+    "equipSound": {
+      "value": "CUSTOM:stevenitearmourequip"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SteveniteIngot"
+      }
+    ]
+  }
+}

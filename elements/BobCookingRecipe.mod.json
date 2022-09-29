@@ -1,0 +1,20 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 50.0,
+    "cookingTime": 500,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Items.COOKED_BEEF"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Bob"
+    },
+    "name": "bob_cooking_recipe",
+    "namespace": "mod"
+  }
+}

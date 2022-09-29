@@ -16,7 +16,18 @@ import net.mcreator.thejammodfabric.item.StevenitePickaxeItem;
 import net.mcreator.thejammodfabric.item.SteveniteIngotItem;
 import net.mcreator.thejammodfabric.item.SteveniteHoeItem;
 import net.mcreator.thejammodfabric.item.SteveniteAxeItem;
+import net.mcreator.thejammodfabric.item.SteveniteArmorItem;
+import net.mcreator.thejammodfabric.item.StevenBowItem;
 import net.mcreator.thejammodfabric.item.JammoniteItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngottSwordItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngottShovelItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngottPickaxeItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngottHoeItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngottAxeItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngottArmorItem;
+import net.mcreator.thejammodfabric.item.JammoniteIngotItem;
+import net.mcreator.thejammodfabric.item.ChocolateItem;
+import net.mcreator.thejammodfabric.item.BobItem;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
 
 public class TheJamModFabricModItems {
@@ -32,6 +43,23 @@ public class TheJamModFabricModItems {
 	public static Item STEVENITE_SHOVEL;
 	public static Item STEVENITE_HOE;
 	public static Item JAMMONITE_ORE;
+	public static Item BOB;
+	public static Item STEVEN_BOW;
+	public static Item CHOCOLATE;
+	public static Item STEVENITE_ARMOR_HELMET;
+	public static Item STEVENITE_ARMOR_CHESTPLATE;
+	public static Item STEVENITE_ARMOR_LEGGINGS;
+	public static Item STEVENITE_ARMOR_BOOTS;
+	public static Item JAMMONITE_INGOT;
+	public static Item JAMMONITE_INGOTT_PICKAXE;
+	public static Item JAMMONITE_INGOTT_AXE;
+	public static Item JAMMONITE_INGOTT_SWORD;
+	public static Item JAMMONITE_INGOTT_SHOVEL;
+	public static Item JAMMONITE_INGOTT_HOE;
+	public static Item JAMMONITE_INGOTT_ARMOR_HELMET;
+	public static Item JAMMONITE_INGOTT_ARMOR_CHESTPLATE;
+	public static Item JAMMONITE_INGOTT_ARMOR_LEGGINGS;
+	public static Item JAMMONITE_INGOTT_ARMOR_BOOTS;
 
 	public static void load() {
 		DEVS = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "devs_spawn_egg"), new SpawnEggItem(
@@ -55,5 +83,36 @@ public class TheJamModFabricModItems {
 		STEVENITE_HOE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "stevenite_hoe"), new SteveniteHoeItem());
 		JAMMONITE_ORE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ore"),
 				new BlockItem(TheJamModFabricModBlocks.JAMMONITE_ORE, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
+		BOB = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "bob"), new BobItem());
+		STEVEN_BOW = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "steven_bow"), new StevenBowItem());
+		CHOCOLATE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "chocolate"), new ChocolateItem());
+		STEVENITE_ARMOR_HELMET = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "stevenite_armor_helmet"),
+				new SteveniteArmorItem.Helmet());
+		STEVENITE_ARMOR_CHESTPLATE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "stevenite_armor_chestplate"),
+				new SteveniteArmorItem.Chestplate());
+		STEVENITE_ARMOR_LEGGINGS = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "stevenite_armor_leggings"),
+				new SteveniteArmorItem.Leggings());
+		STEVENITE_ARMOR_BOOTS = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "stevenite_armor_boots"),
+				new SteveniteArmorItem.Boots());
+		JAMMONITE_INGOT = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingot"),
+				new JammoniteIngotItem());
+		JAMMONITE_INGOTT_PICKAXE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_pickaxe"),
+				new JammoniteIngottPickaxeItem());
+		JAMMONITE_INGOTT_AXE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_axe"),
+				new JammoniteIngottAxeItem());
+		JAMMONITE_INGOTT_SWORD = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_sword"),
+				new JammoniteIngottSwordItem());
+		JAMMONITE_INGOTT_SHOVEL = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_shovel"),
+				new JammoniteIngottShovelItem());
+		JAMMONITE_INGOTT_HOE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_hoe"),
+				new JammoniteIngottHoeItem());
+		JAMMONITE_INGOTT_ARMOR_HELMET = Registry.register(Registry.ITEM,
+				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_helmet"), new JammoniteIngottArmorItem.Helmet());
+		JAMMONITE_INGOTT_ARMOR_CHESTPLATE = Registry.register(Registry.ITEM,
+				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_chestplate"), new JammoniteIngottArmorItem.Chestplate());
+		JAMMONITE_INGOTT_ARMOR_LEGGINGS = Registry.register(Registry.ITEM,
+				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_leggings"), new JammoniteIngottArmorItem.Leggings());
+		JAMMONITE_INGOTT_ARMOR_BOOTS = Registry.register(Registry.ITEM,
+				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_boots"), new JammoniteIngottArmorItem.Boots());
 	}
 }

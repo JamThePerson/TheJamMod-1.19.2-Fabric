@@ -1,0 +1,62 @@
+{
+  "_fv": 33,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "jammondhelmet",
+    "enableBody": true,
+    "textureBody": "jammondchest",
+    "enableLeggings": true,
+    "textureLeggings": "jammondlegs",
+    "enableBoots": true,
+    "textureBoots": "jammondboots",
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "armorTextureFile": "armor_",
+    "helmetName": "Jammonite Ingot Helmet",
+    "bodyName": "Jammonite Ingot Chestplate",
+    "leggingsName": "Jammonite Ingot Leggings",
+    "bootsName": "Jammonite Ingot Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 90,
+    "damageValueHelmet": 6,
+    "damageValueBody": 12,
+    "damageValueLeggings": 9,
+    "damageValueBoots": 6,
+    "enchantability": 40,
+    "toughness": 3.4,
+    "knockbackResistance": 0.2,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:JammoniteIngot"
+      }
+    ]
+  }
+}
