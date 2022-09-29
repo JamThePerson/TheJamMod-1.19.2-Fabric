@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "the_jam_mod_fabric",
+  "version": "1.0.0",
+  "name": "The Jam Mod (Fabric)",
+  "authors": [
+    "kiddo, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "Academic Free License v3.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.thejammodfabric.TheJamModFabricMod"
+    ],
+    "client": [
+      "net.mcreator.thejammodfabric.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

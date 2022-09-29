@@ -1,0 +1,135 @@
+{
+  "mod_elements": [
+    {
+      "name": "Devs",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "devs"
+    },
+    {
+      "name": "JamMod",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jam_mod"
+    },
+    {
+      "name": "Ddyll",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddyll"
+    },
+    {
+      "name": "Fraylo",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fraylo"
+    },
+    {
+      "name": "Jammonite",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite"
+    },
+    {
+      "name": "SteveniteIngot",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_ingot"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "devslivingnoise",
+      "files": [
+        "voice_message_26_09_22"
+      ],
+      "category": "neutral",
+      "subtitle": "Devs Living"
+    },
+    {
+      "name": "devsdeathnoise",
+      "files": [
+        "birdistheword"
+      ],
+      "category": "neutral",
+      "subtitle": "Devs Death"
+    },
+    {
+      "name": "frayloliving",
+      "files": [
+        "stevenliving"
+      ],
+      "category": "neutral",
+      "subtitle": "Fraylo Nearby"
+    },
+    {
+      "name": "fraylowalking",
+      "files": [
+        "stevennotwalking"
+      ],
+      "category": "neutral",
+      "subtitle": "Fraylo Steps"
+    },
+    {
+      "name": "fraylodeath",
+      "files": [
+        "deathsteven"
+      ],
+      "category": "neutral",
+      "subtitle": "Fraylo Death"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.devslivingnoise": "Devs Living",
+      "entity.the_jam_mod_fabric.ddyll": "Ddyll",
+      "subtitles.frayloliving": "Fraylo Nearby",
+      "entity.the_jam_mod_fabric.devs": "Devs",
+      "entity.the_jam_mod_fabric.fraylo": "Fraylo",
+      "itemGroup.the_jam_mod_fabric.jam_mod": "Jam Mod",
+      "subtitles.devsdeathnoise": "Devs Death",
+      "item.the_jam_mod_fabric.fraylo_spawn_egg": "Fraylo Spawn Egg",
+      "subtitles.fraylodeath": "Fraylo Death",
+      "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
+      "subtitles.fraylowalking": "Fraylo Steps",
+      "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
+      "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
+      "item.the_jam_mod_fabric.jammonite": "Jammonite"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "the_jam_mod_fabric",
+    "modName": "The Jam Mod (Fabric)",
+    "version": "1.0.0",
+    "author": "kiddo, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.19.2",
+    "modElementsPackage": "net.mcreator.thejammodfabric",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

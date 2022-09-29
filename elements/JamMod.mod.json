@@ -1,0 +1,11 @@
+{
+  "_fv": 33,
+  "_type": "tab",
+  "definition": {
+    "name": "Jam Mod",
+    "icon": {
+      "value": "Blocks.CANDLE_CAKE#6"
+    },
+    "showSearch": false
+  }
+}

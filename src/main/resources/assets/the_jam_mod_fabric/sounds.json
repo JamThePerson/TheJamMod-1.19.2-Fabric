@@ -1,0 +1,52 @@
+{
+  "devslivingnoise": {
+    "category": "neutral",
+    "subtitle": "subtitles.devslivingnoise",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:voice_message_26_09_22",
+        "stream": false
+      }
+    ]
+  },
+  "devsdeathnoise": {
+    "category": "neutral",
+    "subtitle": "subtitles.devsdeathnoise",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:birdistheword",
+        "stream": false
+      }
+    ]
+  },
+  "frayloliving": {
+    "category": "neutral",
+    "subtitle": "subtitles.frayloliving",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:stevenliving",
+        "stream": false
+      }
+    ]
+  },
+  "fraylowalking": {
+    "category": "neutral",
+    "subtitle": "subtitles.fraylowalking",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:stevennotwalking",
+        "stream": false
+      }
+    ]
+  },
+  "fraylodeath": {
+    "category": "neutral",
+    "subtitle": "subtitles.fraylodeath",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:deathsteven",
+        "stream": false
+      }
+    ]
+  }
+}
