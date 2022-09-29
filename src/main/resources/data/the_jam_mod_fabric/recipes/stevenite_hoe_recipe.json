@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "addition": {
+    "item": "minecraft:purple_dye"
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:stevenite_hoe"
+  }
+}

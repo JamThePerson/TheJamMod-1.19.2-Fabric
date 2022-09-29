@@ -27,7 +27,7 @@
     "bossBarColor": "PURPLE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:SteveniteIngotBlock"
     },
     "equipmentOffHand": {
       "value": ""
@@ -78,7 +78,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:SteveniteIngotBlock"
     },
     "livingSound": {
       "value": "CUSTOM:frayloliving"

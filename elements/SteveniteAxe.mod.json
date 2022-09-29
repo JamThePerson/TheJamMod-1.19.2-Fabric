@@ -1,0 +1,31 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "stevenite_axe",
+    "customModelName": "Normal",
+    "name": "Stevenite Axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 12,
+    "efficiency": 18.0,
+    "attackSpeed": 0.35,
+    "enchantability": 84,
+    "damageVsEntity": 44.0,
+    "usageCount": 6072,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SteveniteIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

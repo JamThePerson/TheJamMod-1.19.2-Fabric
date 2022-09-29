@@ -47,6 +47,126 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "stevenite_ingot"
+    },
+    {
+      "name": "SteveniteIngotBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_ingot_block"
+    },
+    {
+      "name": "StevenitePickaxe",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_pickaxe"
+    },
+    {
+      "name": "SteveniteAxe",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_axe"
+    },
+    {
+      "name": "SteveniteSword",
+      "type": "tool",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_sword"
+    },
+    {
+      "name": "SteveniteShovel",
+      "type": "tool",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_shovel"
+    },
+    {
+      "name": "SteveniteHoe",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_hoe"
+    },
+    {
+      "name": "StevenitePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_pickaxe_recipe"
+    },
+    {
+      "name": "SteveniteAxeRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_axe_recipe"
+    },
+    {
+      "name": "SteveniteSwordRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_sword_recipe"
+    },
+    {
+      "name": "SteveniteShovelRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_shovel_recipe"
+    },
+    {
+      "name": "SteveniteHoeRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_hoe_recipe"
+    },
+    {
+      "name": "JamTestEnchantment",
+      "type": "enchantment",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jam_test_enchantment"
+    },
+    {
+      "name": "JammoniteOre",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ore"
+    },
+    {
+      "name": "SteveniteBlockConversionRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_block_conversion_recipe"
+    },
+    {
+      "name": "SteveniteIngotToBlockRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_ingot_to_block_recipe"
     }
   ],
   "variable_elements": [],
@@ -96,18 +216,26 @@
     "en_us": {
       "subtitles.devslivingnoise": "Devs Living",
       "entity.the_jam_mod_fabric.ddyll": "Ddyll",
+      "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
       "subtitles.frayloliving": "Fraylo Nearby",
+      "item.the_jam_mod_fabric.stevenite_sword": "Stevenite Sword",
       "entity.the_jam_mod_fabric.devs": "Devs",
       "entity.the_jam_mod_fabric.fraylo": "Fraylo",
+      "block.the_jam_mod_fabric.jammonite_ore": "Jammonite Ore",
+      "item.the_jam_mod_fabric.stevenite_axe": "Stevenite Axe",
       "itemGroup.the_jam_mod_fabric.jam_mod": "Jam Mod",
       "subtitles.devsdeathnoise": "Devs Death",
       "item.the_jam_mod_fabric.fraylo_spawn_egg": "Fraylo Spawn Egg",
       "subtitles.fraylodeath": "Fraylo Death",
+      "block.the_jam_mod_fabric.stevenite_ingot_block": "Stevenite Ingot Block",
+      "enchantment.the_jam_mod_fabric.jam_test_enchantment": "Jam Test Enchantment",
       "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
       "subtitles.fraylowalking": "Fraylo Steps",
+      "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
       "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
       "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
-      "item.the_jam_mod_fabric.jammonite": "Jammonite"
+      "item.the_jam_mod_fabric.jammonite": "Jammonite",
+      "item.the_jam_mod_fabric.stevenite_shovel": "Stevenite Shovel"
     }
   },
   "foldersRoot": {
@@ -118,16 +246,18 @@
     "modid": "the_jam_mod_fabric",
     "modName": "The Jam Mod (Fabric)",
     "version": "1.0.0",
-    "author": "kiddo, MCreator",
+    "author": "Jam, Fraylo, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "jamblock",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "fabric-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.thejammodfabric",
     "lockBaseModFiles": false
   },

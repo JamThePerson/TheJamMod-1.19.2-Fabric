@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "addition": {
+    "item": "the_jam_mod_fabric:stevenite_ingot"
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:stevenite_shovel"
+  }
+}

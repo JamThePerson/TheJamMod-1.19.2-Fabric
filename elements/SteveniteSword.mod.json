@@ -1,0 +1,31 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "stevensword",
+    "customModelName": "Normal",
+    "name": "Stevenite Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 12,
+    "efficiency": 18.0,
+    "attackSpeed": 1.25,
+    "enchantability": 84,
+    "damageVsEntity": 19.0,
+    "usageCount": 6072,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SteveniteIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

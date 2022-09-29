@@ -4,13 +4,14 @@
   "version": "1.0.0",
   "name": "The Jam Mod (Fabric)",
   "authors": [
-    "kiddo, MCreator"
+    "Jam, Fraylo, MCreator"
   ],
   "contact": {
     "homepage": "https://mcreator.net",
     "sources": ""
   },
   "license": "Academic Free License v3.0",
+  "icon": "assets/the_jam_mod_fabric/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [

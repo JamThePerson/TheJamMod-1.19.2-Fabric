@@ -1,16 +1,24 @@
 {
   "subtitles.devslivingnoise": "Devs Living",
   "entity.the_jam_mod_fabric.ddyll": "Ddyll",
+  "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
   "subtitles.frayloliving": "Fraylo Nearby",
+  "item.the_jam_mod_fabric.stevenite_sword": "Stevenite Sword",
   "entity.the_jam_mod_fabric.devs": "Devs",
   "entity.the_jam_mod_fabric.fraylo": "Fraylo",
+  "block.the_jam_mod_fabric.jammonite_ore": "Jammonite Ore",
+  "item.the_jam_mod_fabric.stevenite_axe": "Stevenite Axe",
   "itemGroup.the_jam_mod_fabric.jam_mod": "Jam Mod",
   "subtitles.devsdeathnoise": "Devs Death",
   "item.the_jam_mod_fabric.fraylo_spawn_egg": "Fraylo Spawn Egg",
   "subtitles.fraylodeath": "Fraylo Death",
+  "block.the_jam_mod_fabric.stevenite_ingot_block": "Stevenite Ingot Block",
+  "enchantment.the_jam_mod_fabric.jam_test_enchantment": "Jam Test Enchantment",
   "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
   "subtitles.fraylowalking": "Fraylo Steps",
+  "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
   "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
   "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
-  "item.the_jam_mod_fabric.jammonite": "Jammonite"
+  "item.the_jam_mod_fabric.jammonite": "Jammonite",
+  "item.the_jam_mod_fabric.stevenite_shovel": "Stevenite Shovel"
 }

@@ -13,6 +13,7 @@
 package net.mcreator.thejammodfabric;
 
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntityRenderers;
+import net.mcreator.thejammodfabric.init.TheJamModFabricModBlocks;
 
 import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
@@ -22,6 +23,8 @@ import net.fabricmc.api.ClientModInitializer;
 public class ClientInit implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
+
+		TheJamModFabricModBlocks.clientLoad();
 
 		TheJamModFabricModEntityRenderers.load();
 	}
