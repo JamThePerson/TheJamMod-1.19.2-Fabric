@@ -4,7 +4,6 @@ package net.mcreator.thejammodfabric.item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ProjectileWeaponItem;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -20,6 +19,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.thejammodfabric.init.TheJamModFabricModTabs;
+import net.mcreator.thejammodfabric.init.TheJamModFabricModItems;
 import net.mcreator.thejammodfabric.entity.StevenBowEntity;
 
 import net.fabricmc.api.Environment;
@@ -76,23 +76,23 @@ public class StevenBowItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == Items.ARROW);
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == TheJamModFabricModItems.BOB);
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == Items.ARROW) {
+						if (teststack != null && teststack.getItem() == TheJamModFabricModItems.BOB) {
 							stack = teststack;
 							break;
 						}
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					StevenBowEntity entityarrow = StevenBowEntity.shoot(world, entity, world.getRandom(), 5f, 9, 6);
+					StevenBowEntity entityarrow = StevenBowEntity.shoot(world, entity, world.getRandom(), 5f, 12, 9);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 					} else {
-						if (new ItemStack(Items.ARROW).isDamageableItem()) {
+						if (new ItemStack(TheJamModFabricModItems.BOB).isDamageableItem()) {
 							if (stack.hurt(1, world.getRandom(), entity)) {
 								stack.shrink(1);
 								stack.setDamageValue(0);

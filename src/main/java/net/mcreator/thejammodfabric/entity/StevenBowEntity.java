@@ -2,7 +2,6 @@
 package net.mcreator.thejammodfabric.entity;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -41,7 +40,7 @@ public class StevenBowEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(Items.ARROW);
+		return new ItemStack(TheJamModFabricModItems.BOB);
 	}
 
 	@Override
@@ -64,6 +63,7 @@ public class StevenBowEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setCritArrow(true);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
+		entityarrow.setSecondsOnFire(100);
 		world.addFreshEntity(entityarrow);
 		world.playSound((Player) null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.ARROW_SHOOT, SoundSource.PLAYERS, 1,
 				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
@@ -77,9 +77,10 @@ public class StevenBowEntity extends AbstractArrow implements ItemSupplier {
 		double d3 = target.getZ() - entity.getZ();
 		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 5f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(9);
-		entityarrow.setKnockback(6);
+		entityarrow.setBaseDamage(12);
+		entityarrow.setKnockback(9);
 		entityarrow.setCritArrow(true);
+		entityarrow.setSecondsOnFire(100);
 		entity.level.addFreshEntity(entityarrow);
 		double x = entity.getX();
 		double y = entity.getY();

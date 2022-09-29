@@ -15,6 +15,7 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.EatBlockGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
@@ -50,20 +51,21 @@ public class DevsEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new EatBlockGoal(this));
-		this.goalSelector.addGoal(2, new PanicGoal(this, 1.2));
-		this.goalSelector.addGoal(3, new MoveBackToVillageGoal(this, 0.6, false));
-		this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.2, false) {
+		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, DdyllEntity.class, (float) 6, 1, 1.2));
+		this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
+		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
+		this.goalSelector.addGoal(7, new LeapAtTargetGoal(this, (float) 2));
+		this.goalSelector.addGoal(8, new MeleeAttackGoal(this, 1.2, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
 		});
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(6, new HurtByTargetGoal(this).setAlertOthers());
-		this.goalSelector.addGoal(7, new LeapAtTargetGoal(this, (float) 2));
-		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(9, new FloatGoal(this));
+		this.goalSelector.addGoal(9, new MoveBackToVillageGoal(this, 0.6, false));
+		this.goalSelector.addGoal(10, new EatBlockGoal(this));
+		this.goalSelector.addGoal(11, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(12, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(13, new FloatGoal(this));
 	}
 
 	@Override
