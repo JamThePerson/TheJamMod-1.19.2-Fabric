@@ -1,0 +1,15 @@
+{
+  "_fv": 33,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:Jammonite"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 50000.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

@@ -18,9 +18,9 @@ import org.apache.logging.log4j.LogManager;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModTabs;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModSounds;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModItems;
+import net.mcreator.thejammodfabric.init.TheJamModFabricModItemExtensions;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModFeatures;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntities;
-import net.mcreator.thejammodfabric.init.TheJamModFabricModEnchantments;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModBlocks;
 
 import net.fabricmc.api.ModInitializer;
@@ -34,13 +34,13 @@ public class TheJamModFabricMod implements ModInitializer {
 		LOGGER.info("Initializing TheJamModFabricMod");
 		TheJamModFabricModTabs.load();
 
-		TheJamModFabricModEnchantments.load();
-
 		TheJamModFabricModEntities.load();
 		TheJamModFabricModBlocks.load();
 		TheJamModFabricModItems.load();
 
 		TheJamModFabricModFeatures.load();
+
+		TheJamModFabricModItemExtensions.load();
 
 		TheJamModFabricModSounds.load();
 	}

@@ -1,0 +1,46 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      },
+      {
+        "value": "CUSTOM:Jammonite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:JammoniteIngot"
+    },
+    "name": "jammonite_ingot_recipe",
+    "namespace": "mod"
+  }
+}

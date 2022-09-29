@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "1": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "2": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "3": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "6": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "7": {
+      "item": "the_jam_mod_fabric:jammonite"
+    },
+    "8": {
+      "item": "the_jam_mod_fabric:jammonite"
+    }
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:jammonite_ingot",
+    "count": 1
+  }
+}
