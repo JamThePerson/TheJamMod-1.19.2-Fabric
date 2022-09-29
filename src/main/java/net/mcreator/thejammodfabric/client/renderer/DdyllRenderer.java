@@ -18,6 +18,6 @@ public class DdyllRenderer extends HumanoidMobRenderer<DdyllEntity, HumanoidMode
 
 	@Override
 	public ResourceLocation getTextureLocation(DdyllEntity entity) {
-		return new ResourceLocation("the_jam_mod_fabric:textures/entities/92a38eb91c4586ad.png");
+		return new ResourceLocation("the_jam_mod_fabric:textures/entities/f1e9e0a7a65c1669.png");
 	}
 }

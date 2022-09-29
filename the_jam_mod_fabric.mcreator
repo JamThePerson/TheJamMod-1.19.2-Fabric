@@ -483,9 +483,9 @@
   "language_map": {
     "en_us": {
       "item.the_jam_mod_fabric.jammonite_ingott_armor_helmet": "Jammonite Ingot Helmet",
-      "item.the_jam_mod_fabric.bob": "Bob",
-      "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
       "entity.the_jam_mod_fabric.ddyll": "Ddyll",
+      "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
+      "item.the_jam_mod_fabric.bob": "Bob",
       "subtitles.frayloliving": "Fraylo Nearby",
       "item.the_jam_mod_fabric.jammonite_ingot": "Jammonite Ingot",
       "entity.the_jam_mod_fabric.devs": "Devs",
