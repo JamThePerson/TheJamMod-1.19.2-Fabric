@@ -17,7 +17,6 @@ import net.mcreator.thejammodfabric.item.SteveniteIngotItem;
 import net.mcreator.thejammodfabric.item.SteveniteHoeItem;
 import net.mcreator.thejammodfabric.item.SteveniteAxeItem;
 import net.mcreator.thejammodfabric.item.SteveniteArmorItem;
-import net.mcreator.thejammodfabric.item.StevenBowItem;
 import net.mcreator.thejammodfabric.item.JammoniteItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottSwordItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottShovelItem;
@@ -27,7 +26,6 @@ import net.mcreator.thejammodfabric.item.JammoniteIngottAxeItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottArmorItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngotItem;
 import net.mcreator.thejammodfabric.item.JamhimselfItem;
-import net.mcreator.thejammodfabric.item.EmptyBobFlingerItem;
 import net.mcreator.thejammodfabric.item.DoubleSteveniteSwordItem;
 import net.mcreator.thejammodfabric.item.ChocolateItem;
 import net.mcreator.thejammodfabric.item.BobItem;
@@ -47,7 +45,6 @@ public class TheJamModFabricModItems {
 	public static Item STEVENITE_HOE;
 	public static Item JAMMONITE_ORE;
 	public static Item BOB;
-	public static Item STEVEN_BOW;
 	public static Item CHOCOLATE;
 	public static Item STEVENITE_ARMOR_HELMET;
 	public static Item STEVENITE_ARMOR_CHESTPLATE;
@@ -63,7 +60,6 @@ public class TheJamModFabricModItems {
 	public static Item JAMMONITE_INGOTT_ARMOR_CHESTPLATE;
 	public static Item JAMMONITE_INGOTT_ARMOR_LEGGINGS;
 	public static Item JAMMONITE_INGOTT_ARMOR_BOOTS;
-	public static Item EMPTY_BOB_FLINGER;
 	public static Item DOUBLE_STEVENITE_SWORD;
 	public static Item JAM;
 	public static Item JAMHIMSELF;
@@ -94,7 +90,6 @@ public class TheJamModFabricModItems {
 		JAMMONITE_ORE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ore"),
 				new BlockItem(TheJamModFabricModBlocks.JAMMONITE_ORE, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
 		BOB = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "bob"), new BobItem());
-		STEVEN_BOW = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "steven_bow"), new StevenBowItem());
 		CHOCOLATE = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "chocolate"), new ChocolateItem());
 		STEVENITE_ARMOR_HELMET = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "stevenite_armor_helmet"),
 				new SteveniteArmorItem.Helmet());
@@ -124,8 +119,6 @@ public class TheJamModFabricModItems {
 				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_leggings"), new JammoniteIngottArmorItem.Leggings());
 		JAMMONITE_INGOTT_ARMOR_BOOTS = Registry.register(Registry.ITEM,
 				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_boots"), new JammoniteIngottArmorItem.Boots());
-		EMPTY_BOB_FLINGER = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "empty_bob_flinger"),
-				new EmptyBobFlingerItem());
 		DOUBLE_STEVENITE_SWORD = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "double_stevenite_sword"),
 				new DoubleSteveniteSwordItem());
 		JAM = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jam_spawn_egg"),

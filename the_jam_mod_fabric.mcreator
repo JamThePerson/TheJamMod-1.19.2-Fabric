@@ -201,14 +201,6 @@
       "registry_name": "bob_recipe"
     },
     {
-      "name": "StevenBow",
-      "type": "rangeditem",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "steven_bow"
-    },
-    {
       "name": "Chocolate",
       "type": "item",
       "sortid": 38,
@@ -541,30 +533,6 @@
       "registry_name": "solid_crafter"
     },
     {
-      "name": "EmptyBobFlinger",
-      "type": "item",
-      "sortid": 74,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_bob_flinger"
-    },
-    {
-      "name": "EmptyBobFlingerRecipe",
-      "type": "recipe",
-      "sortid": 75,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "empty_bob_flinger_recipe"
-    },
-    {
-      "name": "BobFlingerRecipe",
-      "type": "recipe",
-      "sortid": 76,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bob_flinger_recipe"
-    },
-    {
       "name": "DoubleSteveniteSword",
       "type": "tool",
       "sortid": 77,
@@ -812,7 +780,6 @@
       "advancements.defeat_fraylo.descr": "Successfully kill Fraylo and obtain the Stevenite Block.",
       "advancements.solid_crafter.descr": "Create a Jammonite Ingot!",
       "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
-      "item.the_jam_mod_fabric.empty_bob_flinger": "Empty Bob Flinger",
       "advancements.defeat_jam.title": "Defeat Jam",
       "block.the_jam_mod_fabric.jam_block": "Jam Block",
       "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
@@ -821,7 +788,6 @@
       "itemGroup.the_jam_mod_fabric.jam_mod": "Jam Mod",
       "subtitles.devsdeathnoise": "Devs Death",
       "advancements.obtain_jammonite.title": "Obtain Jammonite",
-      "item.the_jam_mod_fabric.steven_bow": "Bob Flinger",
       "item.the_jam_mod_fabric.jammonite_ingott_pickaxe": "JammoniteIngott Pickaxe",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_chestplate": "Jammonite Ingot Chestplate",
       "item.the_jam_mod_fabric.jamhimself": "Jamhimself",

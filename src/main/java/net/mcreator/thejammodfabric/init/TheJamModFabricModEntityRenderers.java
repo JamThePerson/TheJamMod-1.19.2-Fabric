@@ -4,8 +4,6 @@
  */
 package net.mcreator.thejammodfabric.init;
 
-import net.minecraft.client.renderer.entity.ThrownItemRenderer;
-
 import net.mcreator.thejammodfabric.client.renderer.JamRenderer;
 import net.mcreator.thejammodfabric.client.renderer.FrayloRenderer;
 import net.mcreator.thejammodfabric.client.renderer.DevsRenderer;
@@ -22,7 +20,6 @@ public class TheJamModFabricModEntityRenderers {
 		EntityRendererRegistry.register(TheJamModFabricModEntities.DEVS, DevsRenderer::new);
 		EntityRendererRegistry.register(TheJamModFabricModEntities.DDYLL, DdyllRenderer::new);
 		EntityRendererRegistry.register(TheJamModFabricModEntities.FRAYLO, FrayloRenderer::new);
-		EntityRendererRegistry.register(TheJamModFabricModEntities.STEVEN_BOW, ThrownItemRenderer::new);
 		EntityRendererRegistry.register(TheJamModFabricModEntities.JAM, JamRenderer::new);
 		EntityRendererRegistry.register(TheJamModFabricModEntities.ALEX, AlexRenderer::new);
 	}

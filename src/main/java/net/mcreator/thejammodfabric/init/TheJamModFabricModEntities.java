@@ -11,7 +11,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
 
-import net.mcreator.thejammodfabric.entity.StevenBowEntity;
 import net.mcreator.thejammodfabric.entity.JamEntity;
 import net.mcreator.thejammodfabric.entity.FrayloEntity;
 import net.mcreator.thejammodfabric.entity.DevsEntity;
@@ -26,7 +25,6 @@ public class TheJamModFabricModEntities {
 	public static EntityType<DevsEntity> DEVS;
 	public static EntityType<DdyllEntity> DDYLL;
 	public static EntityType<FrayloEntity> FRAYLO;
-	public static EntityType<StevenBowEntity> STEVEN_BOW;
 	public static EntityType<JamEntity> JAM;
 	public static EntityType<AlexEntity> ALEX;
 
@@ -46,8 +44,6 @@ public class TheJamModFabricModEntities {
 						.fireImmune().trackRangeBlocks(135).forceTrackedVelocityUpdates(true).trackedUpdateRate(3).build());
 		FrayloEntity.init();
 		FabricDefaultAttributeRegistry.register(FRAYLO, FrayloEntity.createAttributes());
-		STEVEN_BOW = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "steven_bow"),
-				createArrowEntityType(StevenBowEntity::new));
 		JAM = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "jam"),
 				FabricEntityTypeBuilder.create(MobCategory.MONSTER, JamEntity::new).dimensions(new EntityDimensions(1.2f, 3.6f, true))
 						.trackRangeBlocks(360).forceTrackedVelocityUpdates(true).trackedUpdateRate(3).build());
