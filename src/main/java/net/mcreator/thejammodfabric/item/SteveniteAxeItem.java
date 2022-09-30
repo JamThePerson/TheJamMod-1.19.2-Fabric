@@ -39,7 +39,7 @@ public class SteveniteAxeItem extends AxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(TheJamModFabricModItems.STEVENITE_INGOT));
 			}
-		}, 1, -3.65f, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD).fireResistant());
+		}, 1, -3.75f, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD).fireResistant());
 	}
 
 	@Override

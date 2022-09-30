@@ -7,7 +7,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
@@ -32,15 +32,17 @@ import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 
+import net.mcreator.thejammodfabric.procedures.JamEntityDiesProcedure;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModItems;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntities;
+import net.mcreator.thejammodfabric.init.TheJamModFabricModBlocks;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
 
 import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
-public class JamEntity extends Zombie {
+public class JamEntity extends Monster {
 	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
 			ServerBossEvent.BossBarOverlay.PROGRESS);
 
@@ -48,6 +50,7 @@ public class JamEntity extends Zombie {
 		super(type, world);
 		xpReward = 1800;
 		setNoAi(false);
+		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TheJamModFabricModItems.JAMMONITE_INGOTT_SWORD));
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.TOTEM_OF_UNDYING));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(TheJamModFabricModItems.JAMMONITE_INGOTT_ARMOR_HELMET));
@@ -59,7 +62,7 @@ public class JamEntity extends Zombie {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new LeapAtTargetGoal(this, (float) 0.5));
+		this.goalSelector.addGoal(1, new LeapAtTargetGoal(this, (float) 0.2));
 		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
@@ -78,6 +81,16 @@ public class JamEntity extends Zombie {
 	@Override
 	public MobType getMobType() {
 		return MobType.UNDEAD;
+	}
+
+	@Override
+	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
+		return false;
+	}
+
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(TheJamModFabricModBlocks.JAM_BLOCK));
 	}
 
 	@Override
@@ -105,6 +118,19 @@ public class JamEntity extends Zombie {
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity sourceentity = source.getEntity();
+		Entity entity = this;
+		Level world = this.level;
+
+		JamEntityDiesProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
 	}
 
 	@Override
@@ -151,7 +177,7 @@ public class JamEntity extends Zombie {
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "jam_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.JAM, 20, 4, 4)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.JAM, 3, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -162,7 +188,6 @@ public class JamEntity extends Zombie {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 25);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 180);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 3);
-		builder = builder.add(Attributes.SPAWN_REINFORCEMENTS_CHANCE);
 		return builder;
 	}
 }

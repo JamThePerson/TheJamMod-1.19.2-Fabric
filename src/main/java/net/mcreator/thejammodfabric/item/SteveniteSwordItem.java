@@ -25,7 +25,7 @@ public class SteveniteSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 17f;
+				return 14f;
 			}
 
 			public int getLevel() {

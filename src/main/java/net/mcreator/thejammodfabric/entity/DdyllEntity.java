@@ -109,7 +109,7 @@ public class DdyllEntity extends Monster {
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "ddyll_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DDYLL, 25, 1, 1)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DDYLL, 28, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

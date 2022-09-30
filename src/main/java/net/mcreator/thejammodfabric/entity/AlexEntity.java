@@ -68,7 +68,7 @@ public class AlexEntity extends Monster {
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "alex_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.ALEX, 20, 4, 4)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.ALEX, 8, 4, 4)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
