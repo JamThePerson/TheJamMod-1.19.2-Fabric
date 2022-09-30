@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "2": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "3": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "4": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "5": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "6": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "7": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    },
+    "8": {
+      "item": "the_jam_mod_fabric:dirt_dust"
+    }
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:dirt_armor_chestplate",
+    "count": 1
+  }
+}

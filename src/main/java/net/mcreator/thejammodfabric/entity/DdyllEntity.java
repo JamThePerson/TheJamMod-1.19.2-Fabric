@@ -67,11 +67,6 @@ public class DdyllEntity extends Monster {
 		return MobType.UNDEFINED;
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.TOTEM_OF_UNDYING));
-	}
-
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return SoundEvents.GENERIC_HURT;

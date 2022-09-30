@@ -1,7 +1,6 @@
 
 package net.mcreator.thejammodfabric.entity;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -10,7 +9,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
 import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -29,15 +27,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.thejammodfabric.procedures.JamEntityDiesProcedure;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModItems;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntities;
-import net.mcreator.thejammodfabric.init.TheJamModFabricModBlocks;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
 
 import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
@@ -45,12 +40,9 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
 public class JamEntity extends Monster {
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.RED,
-			ServerBossEvent.BossBarOverlay.PROGRESS);
-
 	public JamEntity(EntityType<JamEntity> type, Level world) {
 		super(type, world);
-		xpReward = 1800;
+		xpReward = 100000;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TheJamModFabricModItems.JAMMONITE_INGOTT_SWORD));
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.TOTEM_OF_UNDYING));
@@ -73,24 +65,16 @@ public class JamEntity extends Monster {
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomSwimmingGoal(this, 1, 40));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, true));
-		this.goalSelector.addGoal(6, new RemoveBlockGoal(Blocks.GRASS_BLOCK, this, 1, (int) 3));
-		this.goalSelector.addGoal(7, new RemoveBlockGoal(Blocks.DIRT, this, 1, (int) 3));
-		this.goalSelector.addGoal(8, new RemoveBlockGoal(Blocks.STONE, this, 1, (int) 3));
-		this.goalSelector.addGoal(9, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(12, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(15, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(16, new FloatGoal(this));
+		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(9, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(12, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(13, new FloatGoal(this));
 	}
 
 	@Override
 	public MobType getMobType() {
 		return MobType.ILLAGER;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(TheJamModFabricModBlocks.JAM_BLOCK));
 	}
 
 	@Override
@@ -131,29 +115,6 @@ public class JamEntity extends Monster {
 		JamEntityDiesProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
 	}
 
-	@Override
-	public boolean canChangeDimensions() {
-		return false;
-	}
-
-	@Override
-	public void startSeenByPlayer(ServerPlayer player) {
-		super.startSeenByPlayer(player);
-		this.bossInfo.addPlayer(player);
-	}
-
-	@Override
-	public void stopSeenByPlayer(ServerPlayer player) {
-		super.stopSeenByPlayer(player);
-		this.bossInfo.removePlayer(player);
-	}
-
-	@Override
-	public void customServerAiStep() {
-		super.customServerAiStep();
-		this.bossInfo.setProgress(this.getHealth() / this.getMaxHealth());
-	}
-
 	public void aiStep() {
 		super.aiStep();
 		double x = this.getX();
@@ -181,7 +142,7 @@ public class JamEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
-		builder = builder.add(Attributes.MAX_HEALTH, 343);
+		builder = builder.add(Attributes.MAX_HEALTH, 45);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 9);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 135);

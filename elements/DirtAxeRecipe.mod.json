@@ -7,10 +7,19 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": "CUSTOM:DirtDust"
+      },
+      {
+        "value": "CUSTOM:DirtDust"
+      },
+      {
         "value": ""
+      },
+      {
+        "value": "CUSTOM:DirtDust"
       },
       {
         "value": "Items.STICK"
@@ -19,16 +28,7 @@
         "value": ""
       },
       {
-        "value": "Items.TOTEM_OF_UNDYING"
-      },
-      {
-        "value": "CUSTOM:Jamhimself"
-      },
-      {
-        "value": "Items.TOTEM_OF_UNDYING"
-      },
-      {
-        "value": "Items.BOW"
+        "value": ""
       },
       {
         "value": "Items.STICK"
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:UseIfEntityOverflowTool"
+      "value": "CUSTOM:DirtAxe"
     },
-    "name": "entity_over_flow_killer_recipe",
+    "name": "dirt_axe_recipe",
     "namespace": "mod"
   }
 }

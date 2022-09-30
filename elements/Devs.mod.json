@@ -78,7 +78,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Blocks.TNT"
+      "value": ""
     },
     "livingSound": {
       "value": "CUSTOM:devslivingnoise"

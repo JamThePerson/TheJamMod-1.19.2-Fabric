@@ -5,46 +5,37 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.AxeItem;
 
-import net.mcreator.thejammodfabric.init.TheJamModFabricModTabs;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModItems;
 
-import net.fabricmc.api.Environment;
-import net.fabricmc.api.EnvType;
-
-public class SteveniteAxeItem extends AxeItem {
-	public SteveniteAxeItem() {
+public class DirtAxeItem extends AxeItem {
+	public DirtAxeItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 6072;
+				return 95;
 			}
 
 			public float getSpeed() {
-				return 18f;
+				return 4f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 22f;
+				return -1f;
 			}
 
 			public int getLevel() {
-				return 12;
+				return 1;
 			}
 
 			public int getEnchantmentValue() {
-				return 84;
+				return 7;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(TheJamModFabricModItems.STEVENITE_INGOT));
+				return Ingredient.of(new ItemStack(TheJamModFabricModItems.DIRT_DUST));
 			}
-		}, 1, -3.15f, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD).fireResistant());
-	}
-
-	@Override
-	@Environment(EnvType.CLIENT)
-	public boolean isFoil(ItemStack itemstack) {
-		return true;
+		}, 1, -3f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 }

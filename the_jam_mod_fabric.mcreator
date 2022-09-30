@@ -691,6 +691,156 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "entity_over_flow_killer_recipe"
+    },
+    {
+      "name": "UseIfEntityOverflowTool",
+      "type": "tool",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_if_entity_overflow_tool"
+    },
+    {
+      "name": "JammoniteIngotItemExtension",
+      "type": "itemextension",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jammonite_ingot_item_extension"
+    },
+    {
+      "name": "DirtDust",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_dust"
+    },
+    {
+      "name": "DirtArmor",
+      "type": "armor",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "DirtHelmetRecipe",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_helmet_recipe"
+    },
+    {
+      "name": "DirtChestplateRecipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_chestplate_recipe"
+    },
+    {
+      "name": "DirtLeggings",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_leggings"
+    },
+    {
+      "name": "DirtBoots",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_boots"
+    },
+    {
+      "name": "DirtPickaxe",
+      "type": "tool",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_pickaxe"
+    },
+    {
+      "name": "DirtAxe",
+      "type": "tool",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_axe"
+    },
+    {
+      "name": "DirtSword",
+      "type": "tool",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_sword"
+    },
+    {
+      "name": "DirtShovel",
+      "type": "tool",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_shovel"
+    },
+    {
+      "name": "DirtHoe",
+      "type": "tool",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_hoe"
+    },
+    {
+      "name": "DirtPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_pickaxe_recipe"
+    },
+    {
+      "name": "DirtAxeRecipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_axe_recipe"
+    },
+    {
+      "name": "DirtSwordRecipe",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_sword_recipe"
+    },
+    {
+      "name": "DirtShovelRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_shovel_recipe"
+    },
+    {
+      "name": "DirtHoeRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_hoe_recipe"
     }
   ],
   "variable_elements": [],
@@ -754,6 +904,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item.the_jam_mod_fabric.dirt_armor_boots": "Dirt Armor Boots",
       "subtitles.frayloliving": "Fraylo Nearby",
       "item.the_jam_mod_fabric.jammonite_ingot": "Jammonite Ingot",
       "advancements.welcome_to_the_jam_mod.descr": "Install The Jam Mod",
@@ -768,22 +919,27 @@
       "item.the_jam_mod_fabric.jam_spawn_egg": "Jam Spawn Egg",
       "advancements.welcome_to_the_jam_mod.title": "Welcome To The Jam Mod",
       "item.the_jam_mod_fabric.alex_spawn_egg": "Alex Spawn Egg",
+      "item.the_jam_mod_fabric.dirt_sword": "Dirt Sword",
       "item.the_jam_mod_fabric.jammonite_ingott_shovel": "JammoniteIngott Shovel",
       "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
       "item.the_jam_mod_fabric.jammonite_ingott_sword": "Jammonite Ingot Sword",
+      "item.the_jam_mod_fabric.dirt_armor_helmet": "Dirt Armor Helmet",
       "subtitles.stevenitearmourequip": "Stevenite Armor Equipped",
       "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
       "item.the_jam_mod_fabric.jammonite": "Jammonite",
       "subtitles.devslivingnoise": "Devs Living",
       "item.the_jam_mod_fabric.stevenite_armor_boots": "Stevenite Boots",
       "advancements.obtain_jammonite.descr": "Mine Jammonite Ore",
+      "item.the_jam_mod_fabric.dirt_hoe": "Dirt Hoe",
       "item.the_jam_mod_fabric.stevenite_sword": "Stevenite Sword",
       "entity.the_jam_mod_fabric.alex": "Alex",
+      "item.the_jam_mod_fabric.dirt_armor_chestplate": "Dirt Armor Body",
       "block.the_jam_mod_fabric.jammonite_ore": "Jammonite Ore",
       "advancements.kill_ddyll.descr": "Kill DDyll",
       "item.the_jam_mod_fabric.stevenite_armor_helmet": "Stevenite Helmet",
       "subtitles.fraylodeath": "Fraylo Death",
       "block.the_jam_mod_fabric.stevenite_ingot_block": "Stevenite Ingot Block",
+      "item.the_jam_mod_fabric.dirt_armor_leggings": "Dirt Armor Leggings",
       "item.the_jam_mod_fabric.jammonite_ingott_axe": "JammoniteIngott Axe",
       "advancements.legendary_status.title": "Legendary Status",
       "advancements.defeat_devs.title": "Defeat Devs",
@@ -796,9 +952,11 @@
       "entity.the_jam_mod_fabric.ddyll": "Ddyll",
       "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
       "item.the_jam_mod_fabric.bob": "Bob",
+      "item.the_jam_mod_fabric.dirt_shovel": "Dirt Shovel",
       "advancements.defeat_fraylo.title": "Defeat Fraylo",
       "advancements.solid_crafter.title": "Solid Crafter",
       "entity.the_jam_mod_fabric.devs": "Devs",
+      "item.the_jam_mod_fabric.use_if_entity_overflow_tool": "Use If Entity Overflow Tool",
       "advancements.defeat_jam.descr": "Kill the Final Boss of the Jam Mod!",
       "item.the_jam_mod_fabric.stevenite_armor_leggings": "Stevenite Leggings",
       "advancements.defeat_fraylo.descr": "Successfully kill Fraylo and obtain the Stevenite Block.",
@@ -807,6 +965,7 @@
       "advancements.defeat_jam.title": "Defeat Jam",
       "block.the_jam_mod_fabric.jam_block": "Jam Block",
       "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
+      "item.the_jam_mod_fabric.dirt_dust": "Dirt Dust",
       "item.the_jam_mod_fabric.jammonite_ingott_hoe": "JammoniteIngott Hoe",
       "item.the_jam_mod_fabric.use_if_entity_overflow": "Use If Entity Overflow",
       "entity.the_jam_mod_fabric.fraylo": "Fraylo",
@@ -814,8 +973,10 @@
       "subtitles.devsdeathnoise": "Devs Death",
       "advancements.obtain_jammonite.title": "Obtain Jammonite",
       "item.the_jam_mod_fabric.jammonite_ingott_pickaxe": "JammoniteIngott Pickaxe",
+      "item.the_jam_mod_fabric.dirt_axe": "Dirt Axe",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_chestplate": "Jammonite Ingot Chestplate",
       "item.the_jam_mod_fabric.jamhimself": "Jam Himself",
+      "item.the_jam_mod_fabric.dirt_pickaxe": "Dirt Pickaxe",
       "item.the_jam_mod_fabric.stevenite_armor_chestplate": "Stevenite Chestplate",
       "subtitles.fraylowalking": "Fraylo Steps",
       "block.the_jam_mod_fabric.bob_block": "Bob Block",

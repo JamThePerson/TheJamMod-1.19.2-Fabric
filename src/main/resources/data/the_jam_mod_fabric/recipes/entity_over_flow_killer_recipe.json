@@ -14,11 +14,14 @@
       "item": "minecraft:totem_of_undying"
     },
     {
+      "item": "minecraft:bow"
+    },
+    {
       "item": "minecraft:stick"
     }
   ],
   "result": {
-    "item": "the_jam_mod_fabric:use_if_entity_overflow",
+    "item": "the_jam_mod_fabric:use_if_entity_overflow_tool",
     "count": 1
   }
 }

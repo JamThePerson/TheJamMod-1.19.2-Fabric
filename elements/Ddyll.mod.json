@@ -78,7 +78,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.TOTEM_OF_UNDYING"
+      "value": ""
     },
     "livingSound": {
       "value": ""

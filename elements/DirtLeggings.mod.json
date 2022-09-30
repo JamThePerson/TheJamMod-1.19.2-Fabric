@@ -7,40 +7,40 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:DirtDust"
       },
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:DirtDust"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DirtDust"
       },
       {
-        "value": "Items.TOTEM_OF_UNDYING"
-      },
-      {
-        "value": "CUSTOM:Jamhimself"
-      },
-      {
-        "value": "Items.TOTEM_OF_UNDYING"
-      },
-      {
-        "value": "Items.BOW"
-      },
-      {
-        "value": "Items.STICK"
+        "value": "CUSTOM:DirtDust"
       },
       {
         "value": ""
+      },
+      {
+        "value": "CUSTOM:DirtDust"
+      },
+      {
+        "value": "CUSTOM:DirtDust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DirtDust"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:UseIfEntityOverflowTool"
+      "value": "CUSTOM:DirtArmor.legs"
     },
-    "name": "entity_over_flow_killer_recipe",
+    "name": "dirt_leggings",
     "namespace": "mod"
   }
 }
