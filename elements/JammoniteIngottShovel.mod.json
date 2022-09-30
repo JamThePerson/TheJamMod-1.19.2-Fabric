@@ -8,7 +8,7 @@
     "name": "JammoniteIngott Shovel",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:JamMod"
     },
     "toolType": "Spade",
     "harvestLevel": 11,

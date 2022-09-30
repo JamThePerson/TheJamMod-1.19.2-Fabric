@@ -20,4 +20,22 @@
     "name": "stevenite_pickaxe_recipe",
     "namespace": "mod"
   }
+}: ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:JammoniteIngottAxe"
+    },
+    "name": "jammonite_ingott_axe_recipe",
+    "namespace": "mod"
+  }
 }
