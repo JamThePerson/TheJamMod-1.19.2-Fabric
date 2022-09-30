@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "the_jam_mod_fabric:jamhimself"
+    }
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:jammonite",
+    "count": 64
+  }
+}

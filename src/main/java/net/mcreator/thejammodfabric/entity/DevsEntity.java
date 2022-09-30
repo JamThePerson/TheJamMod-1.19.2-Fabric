@@ -116,7 +116,7 @@ public class DevsEntity extends Monster {
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "devs_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.CREATURE,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DEVS, 35, 1, 1)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DEVS, 3, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

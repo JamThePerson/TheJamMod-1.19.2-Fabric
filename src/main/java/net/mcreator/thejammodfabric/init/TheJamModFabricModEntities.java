@@ -40,13 +40,14 @@ public class TheJamModFabricModEntities {
 		DdyllEntity.init();
 		FabricDefaultAttributeRegistry.register(DDYLL, DdyllEntity.createAttributes());
 		FRAYLO = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "fraylo"),
-				FabricEntityTypeBuilder.create(MobCategory.CREATURE, FrayloEntity::new).dimensions(new EntityDimensions(0.6f, 1.8f, true))
+				FabricEntityTypeBuilder.create(MobCategory.CREATURE, FrayloEntity::new).dimensions(new EntityDimensions(0.7f, 1.8f, true))
 						.fireImmune().trackRangeBlocks(135).forceTrackedVelocityUpdates(true).trackedUpdateRate(3).build());
 		FrayloEntity.init();
 		FabricDefaultAttributeRegistry.register(FRAYLO, FrayloEntity.createAttributes());
 		JAM = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "jam"),
-				FabricEntityTypeBuilder.create(MobCategory.MONSTER, JamEntity::new).dimensions(new EntityDimensions(1.2f, 3.6f, true))
-						.trackRangeBlocks(360).forceTrackedVelocityUpdates(true).trackedUpdateRate(3).build());
+				FabricEntityTypeBuilder.create(MobCategory.UNDERGROUND_WATER_CREATURE, JamEntity::new)
+						.dimensions(new EntityDimensions(0.6f, 1.8f, true)).trackRangeBlocks(360).forceTrackedVelocityUpdates(true)
+						.trackedUpdateRate(3).build());
 		JamEntity.init();
 		FabricDefaultAttributeRegistry.register(JAM, JamEntity.createAttributes());
 		ALEX = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "alex"),

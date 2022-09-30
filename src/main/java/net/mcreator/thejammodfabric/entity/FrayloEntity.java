@@ -162,15 +162,15 @@ public class FrayloEntity extends Skeleton {
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "fraylo_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.CREATURE,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.FRAYLO, 15, 1, 1)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.FRAYLO, 3, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.35);
-		builder = builder.add(Attributes.MAX_HEALTH, 500);
-		builder = builder.add(Attributes.ARMOR, 7);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
+		builder = builder.add(Attributes.MAX_HEALTH, 350);
+		builder = builder.add(Attributes.ARMOR, 4);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 7);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 45);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
 		return builder;

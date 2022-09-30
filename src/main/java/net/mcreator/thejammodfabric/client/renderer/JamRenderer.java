@@ -11,7 +11,7 @@ import net.mcreator.thejammodfabric.entity.JamEntity;
 
 public class JamRenderer extends HumanoidMobRenderer<JamEntity, HumanoidModel<JamEntity>> {
 	public JamRenderer(EntityRendererProvider.Context context) {
-		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 1f);
+		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)),
 				new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
 	}

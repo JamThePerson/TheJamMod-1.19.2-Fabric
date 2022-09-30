@@ -18,6 +18,6 @@ public class FrayloRenderer extends HumanoidMobRenderer<FrayloEntity, HumanoidMo
 
 	@Override
 	public ResourceLocation getTextureLocation(FrayloEntity entity) {
-		return new ResourceLocation("the_jam_mod_fabric:textures/entities/cc72604d3f654fb0.png");
+		return new ResourceLocation("the_jam_mod_fabric:textures/entities/873e03d06d3b9326.png");
 	}
 }

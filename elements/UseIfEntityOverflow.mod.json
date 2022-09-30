@@ -3,40 +3,42 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "jamhimselfhighquality",
+    "texture": "jammultitool",
     "customModelName": "Normal",
-    "name": "Jam Himself",
+    "name": "Use If Entity Overflow",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "CUSTOM:JamMod"
+      "value": "FOOD"
     },
     "stackSize": 64,
-    "enchantability": 0,
+    "enchantability": 255,
     "useDuration": 32,
-    "toolType": 5.0,
+    "toolType": 0.1,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
     "destroyAnyBlock": true,
     "immuneToFire": true,
-    "stayInGridWhenCrafting": true,
+    "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 33.0,
-    "specialInfo": [],
+    "damageVsEntity": 999.0,
+    "specialInfo": [
+      "ONLY USE IF ENTITY OVERFLOW IS HAPPENING"
+    ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "isFood": true,
-    "nutritionalValue": 50,
-    "saturation": 75.0,
+    "nutritionalValue": 999,
+    "saturation": 999.0,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:BobBlock"
     },
-    "isMeat": true,
-    "isAlwaysEdible": false,
-    "animation": "eat"
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "spear"
   }
 }

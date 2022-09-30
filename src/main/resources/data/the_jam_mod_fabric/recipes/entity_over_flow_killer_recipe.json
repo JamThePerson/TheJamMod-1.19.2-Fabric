@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "the_jam_mod_fabric:jamhimself"
+    },
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "the_jam_mod_fabric:use_if_entity_overflow",
+    "count": 1
+  }
+}

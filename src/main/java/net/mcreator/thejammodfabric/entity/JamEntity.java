@@ -11,10 +11,12 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RemoveBlockGoal;
+import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.MobType;
@@ -50,7 +52,6 @@ public class JamEntity extends Monster {
 		super(type, world);
 		xpReward = 1800;
 		setNoAi(false);
-		setPersistenceRequired();
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(TheJamModFabricModItems.JAMMONITE_INGOTT_SWORD));
 		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.TOTEM_OF_UNDYING));
 		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(TheJamModFabricModItems.JAMMONITE_INGOTT_ARMOR_HELMET));
@@ -62,7 +63,7 @@ public class JamEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new LeapAtTargetGoal(this, (float) 0.2));
+		this.goalSelector.addGoal(1, new LeapAtTargetGoal(this, (float) 0.5));
 		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
@@ -70,22 +71,21 @@ public class JamEntity extends Monster {
 			}
 		});
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, true, true));
-		this.goalSelector.addGoal(5, new RemoveBlockGoal(Blocks.GRASS_BLOCK, this, 1, (int) 3));
-		this.goalSelector.addGoal(6, new RemoveBlockGoal(Blocks.DIRT, this, 1, (int) 3));
-		this.goalSelector.addGoal(7, new RemoveBlockGoal(Blocks.STONE, this, 1, (int) 3));
-		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(4, new RandomSwimmingGoal(this, 1, 40));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, true, true));
+		this.goalSelector.addGoal(6, new RemoveBlockGoal(Blocks.GRASS_BLOCK, this, 1, (int) 3));
+		this.goalSelector.addGoal(7, new RemoveBlockGoal(Blocks.DIRT, this, 1, (int) 3));
+		this.goalSelector.addGoal(8, new RemoveBlockGoal(Blocks.STONE, this, 1, (int) 3));
+		this.goalSelector.addGoal(9, new RandomStrollGoal(this, 0.8));
+		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(12, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(15, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(16, new FloatGoal(this));
 	}
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEAD;
-	}
-
-	@Override
-	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
-		return false;
+		return MobType.ILLAGER;
 	}
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
@@ -106,8 +106,6 @@ public class JamEntity extends Monster {
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
 		if (source == DamageSource.CACTUS)
-			return false;
-		if (source == DamageSource.DROWN)
 			return false;
 		if (source == DamageSource.ANVIL)
 			return false;
@@ -176,17 +174,17 @@ public class JamEntity extends Monster {
 
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "jam_entity_spawn")).add(ModificationPhase.ADDITIONS,
-				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.JAM, 3, 1, 1)));
+				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.UNDERGROUND_WATER_CREATURE,
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.JAM, 1, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.23);
-		builder = builder.add(Attributes.MAX_HEALTH, 800);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
+		builder = builder.add(Attributes.MAX_HEALTH, 343);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 25);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 180);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 9);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 135);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 3);
 		return builder;
 	}

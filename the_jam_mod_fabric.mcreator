@@ -667,6 +667,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "boblock_to_bob_recipe"
+    },
+    {
+      "name": "JamhimselfToJammonite",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jamhimself_to_jammonite"
+    },
+    {
+      "name": "UseIfEntityOverflow",
+      "type": "item",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_if_entity_overflow"
+    },
+    {
+      "name": "EntityOverFlowKillerRecipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_over_flow_killer_recipe"
     }
   ],
   "variable_elements": [],
@@ -784,13 +808,14 @@
       "block.the_jam_mod_fabric.jam_block": "Jam Block",
       "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
       "item.the_jam_mod_fabric.jammonite_ingott_hoe": "JammoniteIngott Hoe",
+      "item.the_jam_mod_fabric.use_if_entity_overflow": "Use If Entity Overflow",
       "entity.the_jam_mod_fabric.fraylo": "Fraylo",
       "itemGroup.the_jam_mod_fabric.jam_mod": "Jam Mod",
       "subtitles.devsdeathnoise": "Devs Death",
       "advancements.obtain_jammonite.title": "Obtain Jammonite",
       "item.the_jam_mod_fabric.jammonite_ingott_pickaxe": "JammoniteIngott Pickaxe",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_chestplate": "Jammonite Ingot Chestplate",
-      "item.the_jam_mod_fabric.jamhimself": "Jamhimself",
+      "item.the_jam_mod_fabric.jamhimself": "Jam Himself",
       "item.the_jam_mod_fabric.stevenite_armor_chestplate": "Stevenite Chestplate",
       "subtitles.fraylowalking": "Fraylo Steps",
       "block.the_jam_mod_fabric.bob_block": "Bob Block",

@@ -3,6 +3,8 @@ package net.mcreator.thejammodfabric.entity;
 
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -55,6 +57,11 @@ public class AlexEntity extends Monster {
 		return MobType.ILLAGER;
 	}
 
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(Items.COOKED_BEEF));
+	}
+
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return SoundEvents.GENERIC_HURT;
@@ -68,7 +75,7 @@ public class AlexEntity extends Monster {
 	public static void init() {
 		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "alex_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.ALEX, 8, 4, 4)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.ALEX, 3, 1, 1)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

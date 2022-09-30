@@ -10,6 +10,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
 
+import net.mcreator.thejammodfabric.item.UseIfEntityOverflowItem;
 import net.mcreator.thejammodfabric.item.SteveniteSwordItem;
 import net.mcreator.thejammodfabric.item.SteveniteShovelItem;
 import net.mcreator.thejammodfabric.item.StevenitePickaxeItem;
@@ -66,6 +67,7 @@ public class TheJamModFabricModItems {
 	public static Item JAM_BLOCK;
 	public static Item ALEX;
 	public static Item BOB_BLOCK;
+	public static Item USE_IF_ENTITY_OVERFLOW;
 
 	public static void load() {
 		DEVS = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "devs_spawn_egg"), new SpawnEggItem(
@@ -130,5 +132,7 @@ public class TheJamModFabricModItems {
 				TheJamModFabricModEntities.ALEX, -15059493, -6091799, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
 		BOB_BLOCK = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "bob_block"),
 				new BlockItem(TheJamModFabricModBlocks.BOB_BLOCK, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
+		USE_IF_ENTITY_OVERFLOW = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "use_if_entity_overflow"),
+				new UseIfEntityOverflowItem());
 	}
 }
