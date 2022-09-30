@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_jam_mod_fabric:jamhimself"
+    },
+    "title": {
+      "translate": "advancements.defeat_jam.title"
+    },
+    "description": {
+      "translate": "advancements.defeat_jam.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "defeat_jam": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "the_jam_mod_fabric:defeat_fraylo"
+}

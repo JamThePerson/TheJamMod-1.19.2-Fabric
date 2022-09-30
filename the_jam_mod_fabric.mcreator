@@ -563,6 +563,142 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "bob_flinger_recipe"
+    },
+    {
+      "name": "DoubleSteveniteSword",
+      "type": "tool",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_stevenite_sword"
+    },
+    {
+      "name": "DoubleSteveniteSwordRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "double_stevenite_sword_recipe"
+    },
+    {
+      "name": "TheresAlwaysSomethingBetter",
+      "type": "achievement",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "theres_always_something_better"
+    },
+    {
+      "name": "SteveniteArmorAchievementProcedure",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stevenite_armor_achievement_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LegendaryStatus",
+      "type": "achievement",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legendary_status"
+    },
+    {
+      "name": "Jam",
+      "type": "livingentity",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jam"
+    },
+    {
+      "name": "Jamhimself",
+      "type": "item",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jamhimself"
+    },
+    {
+      "name": "DefeatJam",
+      "type": "achievement",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defeat_jam"
+    },
+    {
+      "name": "JamBlock",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jam_block"
+    },
+    {
+      "name": "JamEntityDies",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jam_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Alex",
+      "type": "livingentity",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alex"
+    },
+    {
+      "name": "JamBlockToJamHimselfRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jam_block_to_jam_himself_recipe"
+    },
+    {
+      "name": "BobBlock",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_block"
+    },
+    {
+      "name": "BoblockRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boblock_recipe"
+    },
+    {
+      "name": "BoblockToBobRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boblock_to_bob_recipe"
     }
   ],
   "variable_elements": [],
@@ -614,6 +750,14 @@
       ],
       "category": "neutral",
       "subtitle": "Stevenite Armor Equipped"
+    },
+    {
+      "name": "deafeningstatic",
+      "files": [
+        "browhat"
+      ],
+      "category": "neutral",
+      "subtitle": "Gun shots"
     }
   ],
   "language_map": {
@@ -621,15 +765,20 @@
       "subtitles.frayloliving": "Fraylo Nearby",
       "item.the_jam_mod_fabric.jammonite_ingot": "Jammonite Ingot",
       "advancements.welcome_to_the_jam_mod.descr": "Install The Jam Mod",
+      "advancements.theres_always_something_better.descr": "Upgrade from Netherite to Stevenite",
+      "advancements.legendary_status.descr": "Combine two Stevenite Swords in a smithing table.",
       "item.the_jam_mod_fabric.stevenite_axe": "Stevenite Axe",
       "advancements.create_bob.descr": "Craft Bob in some way.",
       "advancements.kill_ddyll.title": "Defeat DDyll",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_leggings": "Jammonite Ingot Leggings",
       "item.the_jam_mod_fabric.fraylo_spawn_egg": "Fraylo Spawn Egg",
+      "entity.the_jam_mod_fabric.jam": "Jam",
+      "item.the_jam_mod_fabric.jam_spawn_egg": "Jam Spawn Egg",
       "advancements.welcome_to_the_jam_mod.title": "Welcome To The Jam Mod",
+      "item.the_jam_mod_fabric.alex_spawn_egg": "Alex Spawn Egg",
       "item.the_jam_mod_fabric.jammonite_ingott_shovel": "JammoniteIngott Shovel",
-      "item.the_jam_mod_fabric.jammonite_ingott_sword": "Jammonite Ingot Sword",
       "item.the_jam_mod_fabric.stevenite_ingot": "Stevenite Ingot",
+      "item.the_jam_mod_fabric.jammonite_ingott_sword": "Jammonite Ingot Sword",
       "subtitles.stevenitearmourequip": "Stevenite Armor Equipped",
       "item.the_jam_mod_fabric.devs_spawn_egg": "Devs Spawn Egg",
       "item.the_jam_mod_fabric.jammonite": "Jammonite",
@@ -637,28 +786,35 @@
       "item.the_jam_mod_fabric.stevenite_armor_boots": "Stevenite Boots",
       "advancements.obtain_jammonite.descr": "Mine Jammonite Ore",
       "item.the_jam_mod_fabric.stevenite_sword": "Stevenite Sword",
+      "entity.the_jam_mod_fabric.alex": "Alex",
       "block.the_jam_mod_fabric.jammonite_ore": "Jammonite Ore",
       "advancements.kill_ddyll.descr": "Kill DDyll",
       "item.the_jam_mod_fabric.stevenite_armor_helmet": "Stevenite Helmet",
       "subtitles.fraylodeath": "Fraylo Death",
       "block.the_jam_mod_fabric.stevenite_ingot_block": "Stevenite Ingot Block",
       "item.the_jam_mod_fabric.jammonite_ingott_axe": "JammoniteIngott Axe",
+      "advancements.legendary_status.title": "Legendary Status",
       "advancements.defeat_devs.title": "Defeat Devs",
       "advancements.create_bob.title": "Create Bob",
       "item.the_jam_mod_fabric.chocolate": "Chocolate",
+      "subtitles.deafeningstatic": "Gun shots",
       "item.the_jam_mod_fabric.stevenite_shovel": "Stevenite Shovel",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_helmet": "Jammonite Ingot Helmet",
+      "item.the_jam_mod_fabric.double_stevenite_sword": "Double Stevenite Sword",
       "entity.the_jam_mod_fabric.ddyll": "Ddyll",
       "item.the_jam_mod_fabric.stevenite_pickaxe": "Stevenite Pickaxe",
       "item.the_jam_mod_fabric.bob": "Bob",
       "advancements.defeat_fraylo.title": "Defeat Fraylo",
       "advancements.solid_crafter.title": "Solid Crafter",
       "entity.the_jam_mod_fabric.devs": "Devs",
+      "advancements.defeat_jam.descr": "Kill the Final Boss of the Jam Mod!",
       "item.the_jam_mod_fabric.stevenite_armor_leggings": "Stevenite Leggings",
       "advancements.defeat_fraylo.descr": "Successfully kill Fraylo and obtain the Stevenite Block.",
       "advancements.solid_crafter.descr": "Create a Jammonite Ingot!",
       "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
       "item.the_jam_mod_fabric.empty_bob_flinger": "Empty Bob Flinger",
+      "advancements.defeat_jam.title": "Defeat Jam",
+      "block.the_jam_mod_fabric.jam_block": "Jam Block",
       "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
       "item.the_jam_mod_fabric.jammonite_ingott_hoe": "JammoniteIngott Hoe",
       "entity.the_jam_mod_fabric.fraylo": "Fraylo",
@@ -668,8 +824,11 @@
       "item.the_jam_mod_fabric.steven_bow": "Bob Flinger",
       "item.the_jam_mod_fabric.jammonite_ingott_pickaxe": "JammoniteIngott Pickaxe",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_chestplate": "Jammonite Ingot Chestplate",
+      "item.the_jam_mod_fabric.jamhimself": "Jamhimself",
       "item.the_jam_mod_fabric.stevenite_armor_chestplate": "Stevenite Chestplate",
       "subtitles.fraylowalking": "Fraylo Steps",
+      "block.the_jam_mod_fabric.bob_block": "Bob Block",
+      "advancements.theres_always_something_better.title": "There\u0027s Always Something Better",
       "item.the_jam_mod_fabric.jammonite_ingott_armor_boots": "Jammonite Ingot Boots",
       "advancements.defeat_devs.descr": "Kill Devs"
     }

@@ -1,0 +1,31 @@
+{
+  "_fv": 33,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "doublestevenitesword",
+    "customModelName": "Normal",
+    "name": "Double Stevenite Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 12,
+    "efficiency": 54.0,
+    "attackSpeed": 2.5,
+    "enchantability": 243,
+    "damageVsEntity": 38.0,
+    "usageCount": 12028,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SteveniteIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

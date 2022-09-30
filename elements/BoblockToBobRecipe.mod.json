@@ -10,7 +10,7 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:BobBlock"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:SteveniteIngotBlock"
+        "value": ""
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SteveniteIngot"
+      "value": "CUSTOM:Bob"
     },
-    "name": "stevenite_block_conversion_recipe",
+    "name": "boblock_to_bob_recipe",
     "namespace": "mod"
   }
 }

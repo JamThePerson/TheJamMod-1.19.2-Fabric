@@ -26,7 +26,9 @@ import net.mcreator.thejammodfabric.item.JammoniteIngottHoeItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottAxeItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottArmorItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngotItem;
+import net.mcreator.thejammodfabric.item.JamhimselfItem;
 import net.mcreator.thejammodfabric.item.EmptyBobFlingerItem;
+import net.mcreator.thejammodfabric.item.DoubleSteveniteSwordItem;
 import net.mcreator.thejammodfabric.item.ChocolateItem;
 import net.mcreator.thejammodfabric.item.BobItem;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
@@ -62,6 +64,12 @@ public class TheJamModFabricModItems {
 	public static Item JAMMONITE_INGOTT_ARMOR_LEGGINGS;
 	public static Item JAMMONITE_INGOTT_ARMOR_BOOTS;
 	public static Item EMPTY_BOB_FLINGER;
+	public static Item DOUBLE_STEVENITE_SWORD;
+	public static Item JAM;
+	public static Item JAMHIMSELF;
+	public static Item JAM_BLOCK;
+	public static Item ALEX;
+	public static Item BOB_BLOCK;
 
 	public static void load() {
 		DEVS = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "devs_spawn_egg"), new SpawnEggItem(
@@ -118,5 +126,16 @@ public class TheJamModFabricModItems {
 				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_boots"), new JammoniteIngottArmorItem.Boots());
 		EMPTY_BOB_FLINGER = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "empty_bob_flinger"),
 				new EmptyBobFlingerItem());
+		DOUBLE_STEVENITE_SWORD = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "double_stevenite_sword"),
+				new DoubleSteveniteSwordItem());
+		JAM = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jam_spawn_egg"),
+				new SpawnEggItem(TheJamModFabricModEntities.JAM, -16062198, -5900765, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
+		JAMHIMSELF = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jamhimself"), new JamhimselfItem());
+		JAM_BLOCK = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "jam_block"),
+				new BlockItem(TheJamModFabricModBlocks.JAM_BLOCK, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
+		ALEX = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "alex_spawn_egg"), new SpawnEggItem(
+				TheJamModFabricModEntities.ALEX, -15059493, -6091799, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
+		BOB_BLOCK = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "bob_block"),
+				new BlockItem(TheJamModFabricModBlocks.BOB_BLOCK, new Item.Properties().tab(TheJamModFabricModTabs.TAB_JAM_MOD)));
 	}
 }

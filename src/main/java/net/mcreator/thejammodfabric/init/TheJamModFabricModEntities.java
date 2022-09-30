@@ -12,9 +12,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
 
 import net.mcreator.thejammodfabric.entity.StevenBowEntity;
+import net.mcreator.thejammodfabric.entity.JamEntity;
 import net.mcreator.thejammodfabric.entity.FrayloEntity;
 import net.mcreator.thejammodfabric.entity.DevsEntity;
 import net.mcreator.thejammodfabric.entity.DdyllEntity;
+import net.mcreator.thejammodfabric.entity.AlexEntity;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -25,6 +27,8 @@ public class TheJamModFabricModEntities {
 	public static EntityType<DdyllEntity> DDYLL;
 	public static EntityType<FrayloEntity> FRAYLO;
 	public static EntityType<StevenBowEntity> STEVEN_BOW;
+	public static EntityType<JamEntity> JAM;
+	public static EntityType<AlexEntity> ALEX;
 
 	public static void load() {
 		DEVS = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "devs"),
@@ -44,6 +48,16 @@ public class TheJamModFabricModEntities {
 		FabricDefaultAttributeRegistry.register(FRAYLO, FrayloEntity.createAttributes());
 		STEVEN_BOW = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "steven_bow"),
 				createArrowEntityType(StevenBowEntity::new));
+		JAM = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "jam"),
+				FabricEntityTypeBuilder.create(MobCategory.MONSTER, JamEntity::new).dimensions(new EntityDimensions(1.2f, 3.6f, true))
+						.trackRangeBlocks(360).forceTrackedVelocityUpdates(true).trackedUpdateRate(3).build());
+		JamEntity.init();
+		FabricDefaultAttributeRegistry.register(JAM, JamEntity.createAttributes());
+		ALEX = Registry.register(Registry.ENTITY_TYPE, new ResourceLocation(TheJamModFabricMod.MODID, "alex"),
+				FabricEntityTypeBuilder.create(MobCategory.MONSTER, AlexEntity::new).dimensions(new EntityDimensions(0.6f, 1.8f, true))
+						.trackRangeBlocks(64).forceTrackedVelocityUpdates(true).trackedUpdateRate(3).build());
+		AlexEntity.init();
+		FabricDefaultAttributeRegistry.register(ALEX, AlexEntity.createAttributes());
 	}
 
 	private static <T extends Entity> EntityType<T> createArrowEntityType(EntityType.EntityFactory<T> factory) {

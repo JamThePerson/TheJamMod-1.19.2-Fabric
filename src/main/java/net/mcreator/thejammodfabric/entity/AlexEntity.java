@@ -3,9 +3,6 @@ package net.mcreator.thejammodfabric.entity;
 
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -18,17 +15,12 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 
-import net.mcreator.thejammodfabric.procedures.DdyllEntityDiesProcedure;
 import net.mcreator.thejammodfabric.init.TheJamModFabricModEntities;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
 
@@ -36,15 +28,11 @@ import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
-public class DdyllEntity extends Monster {
-	public DdyllEntity(EntityType<DdyllEntity> type, Level world) {
+public class AlexEntity extends Monster {
+	public AlexEntity(EntityType<AlexEntity> type, Level world) {
 		super(type, world);
-		xpReward = 75;
+		xpReward = 4;
 		setNoAi(false);
-		setCustomName(Component.literal("DDyll"));
-		setCustomNameVisible(true);
-		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(Items.TOTEM_OF_UNDYING));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.DIAMOND_BOOTS));
 	}
 
 	@Override
@@ -64,12 +52,7 @@ public class DdyllEntity extends Monster {
 
 	@Override
 	public MobType getMobType() {
-		return MobType.UNDEFINED;
-	}
-
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Items.TOTEM_OF_UNDYING));
+		return MobType.ILLAGER;
 	}
 
 	@Override
@@ -82,45 +65,21 @@ public class DdyllEntity extends Monster {
 		return SoundEvents.GENERIC_DEATH;
 	}
 
-	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
-			return false;
-		if (source == DamageSource.FALL)
-			return false;
-		if (source == DamageSource.LIGHTNING_BOLT)
-			return false;
-		return super.hurt(source, amount);
-	}
-
-	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		double x = this.getX();
-		double y = this.getY();
-		double z = this.getZ();
-		Entity sourceentity = source.getEntity();
-		Entity entity = this;
-		Level world = this.level;
-
-		DdyllEntityDiesProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
-	}
-
 	public static void init() {
-		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "ddyll_entity_spawn")).add(ModificationPhase.ADDITIONS,
+		BiomeModifications.create(new ResourceLocation(TheJamModFabricMod.MODID, "alex_entity_spawn")).add(ModificationPhase.ADDITIONS,
 				BiomeSelectors.all(), ctx -> ctx.getSpawnSettings().addSpawn(MobCategory.MONSTER,
-						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.DDYLL, 25, 1, 1)));
+						new MobSpawnSettings.SpawnerData(TheJamModFabricModEntities.ALEX, 20, 4, 4)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.6);
-		builder = builder.add(Attributes.MAX_HEALTH, 130);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 4);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 2);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 58);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 6);
 		return builder;
 	}
 }

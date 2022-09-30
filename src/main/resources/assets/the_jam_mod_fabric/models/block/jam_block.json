@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_jam_mod_fabric:blocks/jamblockunder",
+    "up": "the_jam_mod_fabric:blocks/jamblockabove",
+    "north": "the_jam_mod_fabric:blocks/jamblock",
+    "east": "the_jam_mod_fabric:blocks/jamblock",
+    "south": "the_jam_mod_fabric:blocks/jamblock",
+    "west": "the_jam_mod_fabric:blocks/jamblock",
+    "particle": "the_jam_mod_fabric:blocks/jamblockunder"
+  }
+}

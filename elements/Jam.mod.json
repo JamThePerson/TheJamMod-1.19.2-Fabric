@@ -1,0 +1,129 @@
+{
+  "_fv": 33,
+  "_type": "livingentity",
+  "definition": {
+    "mobName": "Jam",
+    "mobLabel": "",
+    "mobModelName": "Biped",
+    "mobModelTexture": "jamhd.png",
+    "mobModelGlowTexture": "",
+    "modelWidth": 1.2,
+    "modelHeight": 3.6,
+    "modelShadowSize": 1.0,
+    "mountedYOffset": 0.0,
+    "hasSpawnEgg": true,
+    "spawnEggBaseColor": {
+      "value": -16062198,
+      "falpha": 0.0
+    },
+    "spawnEggDotColor": {
+      "value": -5900765,
+      "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "CUSTOM:JamMod"
+    },
+    "isBoss": true,
+    "bossBarColor": "RED",
+    "bossBarType": "PROGRESS",
+    "equipmentMainHand": {
+      "value": "CUSTOM:JammoniteIngottSword"
+    },
+    "equipmentOffHand": {
+      "value": "Items.TOTEM_OF_UNDYING"
+    },
+    "equipmentHelmet": {
+      "value": "CUSTOM:JammoniteIngottArmor.helmet"
+    },
+    "equipmentBody": {
+      "value": "CUSTOM:JammoniteIngottArmor.body"
+    },
+    "equipmentLeggings": {
+      "value": "CUSTOM:JammoniteIngottArmor.legs"
+    },
+    "equipmentBoots": {
+      "value": "CUSTOM:JammoniteIngottArmor.boots"
+    },
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEAD",
+    "attackStrength": 25,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 3.0,
+    "movementSpeed": 0.23,
+    "armorBaseValue": 0.0,
+    "trackingRange": 360,
+    "followRange": 180,
+    "health": 800,
+    "xpAmount": 1800,
+    "waterMob": false,
+    "flyingMob": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 18,
+    "inventoryStackSize": 64,
+    "disableCollisions": false,
+    "ridable": false,
+    "canControlForward": false,
+    "canControlStrafe": false,
+    "immuneToFire": false,
+    "immuneToArrows": false,
+    "immuneToFallDamage": false,
+    "immuneToCactus": true,
+    "immuneToDrowning": true,
+    "immuneToLightning": false,
+    "immuneToPotions": false,
+    "immuneToPlayer": false,
+    "immuneToExplosion": false,
+    "immuneToTrident": false,
+    "immuneToAnvil": true,
+    "immuneToWither": true,
+    "immuneToDragonBreath": true,
+    "mobDrop": {
+      "value": "CUSTOM:JamBlock"
+    },
+    "livingSound": {
+      "value": ""
+    },
+    "hurtSound": {
+      "value": "entity.generic.hurt"
+    },
+    "deathSound": {
+      "value": "entity.generic.death"
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "TOTEM"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 1.9,
+    "particleAmount": 2,
+    "whenMobDies": {
+      "name": "JamEntityDies"
+    },
+    "hasAI": true,
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.2</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"break_blocks\"><field name=\"speed\">1</field><field name=\"y_max\">3</field><field name=\"condition\">null,null</field><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.GRASS</field></block></value><next><block type=\"break_blocks\"><field name=\"speed\">1</field><field name=\"y_max\">3</field><field name=\"condition\">null,null</field><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.DIRT#0</field></block></value><next><block type=\"break_blocks\"><field name=\"speed\">1</field><field name=\"y_max\">3</field><field name=\"condition\">null,null</field><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.STONE#0</field></block></value><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": false,
+    "tameable": false,
+    "breedTriggerItems": [],
+    "ranged": false,
+    "rangedAttackItem": {
+      "value": ""
+    },
+    "rangedItemType": "Default item",
+    "spawnThisMob": true,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [
+      {
+        "value": "end_highlands"
+      }
+    ],
+    "spawnInDungeons": false
+  }
+}

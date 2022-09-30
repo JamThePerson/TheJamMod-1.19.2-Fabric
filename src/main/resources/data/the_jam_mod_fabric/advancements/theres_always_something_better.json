@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "the_jam_mod_fabric:stevenite_sword"
+    },
+    "title": {
+      "translate": "advancements.theres_always_something_better.title"
+    },
+    "description": {
+      "translate": "advancements.theres_always_something_better.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "theres_always_something_better": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "the_jam_mod_fabric:defeat_fraylo"
+}

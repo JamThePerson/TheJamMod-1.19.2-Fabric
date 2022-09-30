@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:SteveniteIngotBlock"
+        "value": "CUSTOM:JamBlock"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SteveniteIngot"
+      "value": "CUSTOM:Jamhimself"
     },
-    "name": "stevenite_block_conversion_recipe",
+    "name": "jam_block_to_jam_himself_recipe",
     "namespace": "mod"
   }
 }

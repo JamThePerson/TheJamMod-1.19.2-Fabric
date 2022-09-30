@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "the_jam_mod_fabric:stevenite_sword"
+  },
+  "addition": {
+    "item": "the_jam_mod_fabric:stevenite_sword"
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:double_stevenite_sword"
+  }
+}

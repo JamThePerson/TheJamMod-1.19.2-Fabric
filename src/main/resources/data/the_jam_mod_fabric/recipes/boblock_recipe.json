@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "1": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "2": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "3": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "4": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "5": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "6": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "7": {
+      "item": "the_jam_mod_fabric:bob"
+    },
+    "8": {
+      "item": "the_jam_mod_fabric:bob"
+    }
+  },
+  "result": {
+    "item": "the_jam_mod_fabric:bob_block",
+    "count": 1
+  }
+}

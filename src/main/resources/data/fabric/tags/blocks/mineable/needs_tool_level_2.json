@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "the_jam_mod_fabric:jammonite_ore"
+    "the_jam_mod_fabric:jammonite_ore",
+    "the_jam_mod_fabric:jam_block"
   ]
 }

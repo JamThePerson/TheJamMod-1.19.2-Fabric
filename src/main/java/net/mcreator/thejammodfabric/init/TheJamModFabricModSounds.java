@@ -15,6 +15,7 @@ public class TheJamModFabricModSounds {
 	public static SoundEvent FRAYLOWALKING = new SoundEvent(new ResourceLocation("the_jam_mod_fabric", "fraylowalking"));
 	public static SoundEvent FRAYLODEATH = new SoundEvent(new ResourceLocation("the_jam_mod_fabric", "fraylodeath"));
 	public static SoundEvent STEVENITEARMOUREQUIP = new SoundEvent(new ResourceLocation("the_jam_mod_fabric", "stevenitearmourequip"));
+	public static SoundEvent DEAFENINGSTATIC = new SoundEvent(new ResourceLocation("the_jam_mod_fabric", "deafeningstatic"));
 
 	public static void load() {
 		Registry.register(Registry.SOUND_EVENT, new ResourceLocation("the_jam_mod_fabric", "devslivingnoise"), DEVSLIVINGNOISE);
@@ -23,5 +24,6 @@ public class TheJamModFabricModSounds {
 		Registry.register(Registry.SOUND_EVENT, new ResourceLocation("the_jam_mod_fabric", "fraylowalking"), FRAYLOWALKING);
 		Registry.register(Registry.SOUND_EVENT, new ResourceLocation("the_jam_mod_fabric", "fraylodeath"), FRAYLODEATH);
 		Registry.register(Registry.SOUND_EVENT, new ResourceLocation("the_jam_mod_fabric", "stevenitearmourequip"), STEVENITEARMOUREQUIP);
+		Registry.register(Registry.SOUND_EVENT, new ResourceLocation("the_jam_mod_fabric", "deafeningstatic"), DEAFENINGSTATIC);
 	}
 }

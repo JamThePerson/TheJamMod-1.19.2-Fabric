@@ -58,5 +58,15 @@
         "stream": false
       }
     ]
+  },
+  "deafeningstatic": {
+    "category": "neutral",
+    "subtitle": "subtitles.deafeningstatic",
+    "sounds": [
+      {
+        "name": "the_jam_mod_fabric:browhat",
+        "stream": false
+      }
+    ]
   }
 }
