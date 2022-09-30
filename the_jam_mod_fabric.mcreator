@@ -539,6 +539,30 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "solid_crafter"
+    },
+    {
+      "name": "EmptyBobFlinger",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_bob_flinger"
+    },
+    {
+      "name": "EmptyBobFlingerRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_bob_flinger_recipe"
+    },
+    {
+      "name": "BobFlingerRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_flinger_recipe"
     }
   ],
   "variable_elements": [],
@@ -634,6 +658,7 @@
       "advancements.defeat_fraylo.descr": "Successfully kill Fraylo and obtain the Stevenite Block.",
       "advancements.solid_crafter.descr": "Create a Jammonite Ingot!",
       "item.the_jam_mod_fabric.stevenite_hoe": "Stevenite Hoe",
+      "item.the_jam_mod_fabric.empty_bob_flinger": "Empty Bob Flinger",
       "item.the_jam_mod_fabric.ddyll_spawn_egg": "Ddyll Spawn Egg",
       "item.the_jam_mod_fabric.jammonite_ingott_hoe": "JammoniteIngott Hoe",
       "entity.the_jam_mod_fabric.fraylo": "Fraylo",

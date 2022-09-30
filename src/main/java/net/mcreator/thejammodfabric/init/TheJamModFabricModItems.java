@@ -26,6 +26,7 @@ import net.mcreator.thejammodfabric.item.JammoniteIngottHoeItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottAxeItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngottArmorItem;
 import net.mcreator.thejammodfabric.item.JammoniteIngotItem;
+import net.mcreator.thejammodfabric.item.EmptyBobFlingerItem;
 import net.mcreator.thejammodfabric.item.ChocolateItem;
 import net.mcreator.thejammodfabric.item.BobItem;
 import net.mcreator.thejammodfabric.TheJamModFabricMod;
@@ -60,6 +61,7 @@ public class TheJamModFabricModItems {
 	public static Item JAMMONITE_INGOTT_ARMOR_CHESTPLATE;
 	public static Item JAMMONITE_INGOTT_ARMOR_LEGGINGS;
 	public static Item JAMMONITE_INGOTT_ARMOR_BOOTS;
+	public static Item EMPTY_BOB_FLINGER;
 
 	public static void load() {
 		DEVS = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "devs_spawn_egg"), new SpawnEggItem(
@@ -114,5 +116,7 @@ public class TheJamModFabricModItems {
 				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_leggings"), new JammoniteIngottArmorItem.Leggings());
 		JAMMONITE_INGOTT_ARMOR_BOOTS = Registry.register(Registry.ITEM,
 				new ResourceLocation(TheJamModFabricMod.MODID, "jammonite_ingott_armor_boots"), new JammoniteIngottArmorItem.Boots());
+		EMPTY_BOB_FLINGER = Registry.register(Registry.ITEM, new ResourceLocation(TheJamModFabricMod.MODID, "empty_bob_flinger"),
+				new EmptyBobFlingerItem());
 	}
 }
